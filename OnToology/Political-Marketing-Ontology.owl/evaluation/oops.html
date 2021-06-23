@@ -117,10 +117,24 @@ table.tablesorter thead tr .headerSortDown {
     <div class="panel-heading">
     <h4 class="panel-title">
     <a data-toggle="collapse" href="#collapse0">
-    P05. Defining wrong inverse relationships<span style="float: right;">2 cases detected. <span class="label label-danger">Critical</span></span></a>
+    P19. Defining multiple domains or ranges in properties<span style="float: right;">1 cases detected. <span class="label label-danger">Critical</span></span></a>
     </h4>
     </div>
     <div id="collapse0" class="panel-collapse collapse">
+    <div class="panel-body">
+    <p>The domain or range (or both) of a property (relationships and attributes) is defined by stating more than one rdfs:domain or rdfs:range statements. In OWL multiple rdfs:domain or rdfs:range axioms are allowed, but they are interpreted as conjunction, being, therefore, equivalent to the construct owl:intersectionOf. This pitfall is related to the common error that appears when defining domains and ranges described in [7].	</p>
+    </div>
+    </div>
+    </div>
+    
+    <div class="panel panel-default">
+    <div class="panel-heading">
+    <h4 class="panel-title">
+    <a data-toggle="collapse" href="#collapse1">
+    P05. Defining wrong inverse relationships<span style="float: right;">2 cases detected. <span class="label label-danger">Critical</span></span></a>
+    </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse">
     <div class="panel-body">
     <p>Two relationships are defined as inverse relations when they are not necessarily inverse.	</p>
     </div>
@@ -130,27 +144,13 @@ table.tablesorter thead tr .headerSortDown {
     <div class="panel panel-default">
     <div class="panel-heading">
     <h4 class="panel-title">
-    <a data-toggle="collapse" href="#collapse1">
-    P08. Missing annotations<span style="float: right;">77 cases detected. <span class="label label-minor">Minor</span></span></a>
-    </h4>
-    </div>
-    <div id="collapse1" class="panel-collapse collapse">
-    <div class="panel-body">
-    <p>This pitfall consists in creating an ontology element and failing to provide human readable annotations attached to it. Consequently, ontology elements lack annotation properties that label them (e.g. rdfs:label, lemon:LexicalEntry, skos:prefLabel or skos:altLabel) or that define them (e.g. rdfs:comment or dc:description). This pitfall is related to the guidelines provided in [5].	</p>
-    </div>
-    </div>
-    </div>
-    
-    <div class="panel panel-default">
-    <div class="panel-heading">
-    <h4 class="panel-title">
     <a data-toggle="collapse" href="#collapse2">
-    P19. Defining multiple domains or ranges in properties<span style="float: right;">1 cases detected. <span class="label label-danger">Critical</span></span></a>
+    P08. Missing annotations<span style="float: right;">77 cases detected. <span class="label label-minor">Minor</span></span></a>
     </h4>
     </div>
     <div id="collapse2" class="panel-collapse collapse">
     <div class="panel-body">
-    <p>The domain or range (or both) of a property (relationships and attributes) is defined by stating more than one rdfs:domain or rdfs:range statements. In OWL multiple rdfs:domain or rdfs:range axioms are allowed, but they are interpreted as conjunction, being, therefore, equivalent to the construct owl:intersectionOf. This pitfall is related to the common error that appears when defining domains and ranges described in [7].	</p>
+    <p>This pitfall consists in creating an ontology element and failing to provide human readable annotations attached to it. Consequently, ontology elements lack annotation properties that label them (e.g. rdfs:label, lemon:LexicalEntry, skos:prefLabel or skos:altLabel) or that define them (e.g. rdfs:comment or dc:description). This pitfall is related to the guidelines provided in [5].	</p>
     </div>
     </div>
     </div>

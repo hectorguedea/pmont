@@ -19,6 +19,11 @@ It is obvious that not all the pitfalls are equally important; their impact in t
 
 
 
+#### P19. Defining multiple domains or ranges in properties <img src="https://raw.githubusercontent.com/OnToology/oops-report/master/sample/critical.png" height="15px"> (1 cases detected).
+*The domain or range (or both) of a property (relationships and attributes) is defined by stating more than one rdfs:domain or rdfs:range statements. In OWL multiple rdfs:domain or rdfs:range axioms are allowed, but they are interpreted as conjunction, being, therefore, equivalent to the construct owl:intersectionOf. This pitfall is related to the common error that appears when defining domains and ranges described in [7].*
+
+    
+
 #### P05. Defining wrong inverse relationships <img src="https://raw.githubusercontent.com/OnToology/oops-report/master/sample/critical.png" height="15px"> (2 cases detected).
 *Two relationships are defined as inverse relations when they are not necessarily inverse.*
 
@@ -26,11 +31,6 @@ It is obvious that not all the pitfalls are equally important; their impact in t
 
 #### P08. Missing annotations <img src="https://raw.githubusercontent.com/OnToology/oops-report/master/sample/minor.png" height="15px"> (77 cases detected).
 *This pitfall consists in creating an ontology element and failing to provide human readable annotations attached to it. Consequently, ontology elements lack annotation properties that label them (e.g. rdfs:label, lemon:LexicalEntry, skos:prefLabel or skos:altLabel) or that define them (e.g. rdfs:comment or dc:description). This pitfall is related to the guidelines provided in [5].*
-
-    
-
-#### P19. Defining multiple domains or ranges in properties <img src="https://raw.githubusercontent.com/OnToology/oops-report/master/sample/critical.png" height="15px"> (1 cases detected).
-*The domain or range (or both) of a property (relationships and attributes) is defined by stating more than one rdfs:domain or rdfs:range statements. In OWL multiple rdfs:domain or rdfs:range axioms are allowed, but they are interpreted as conjunction, being, therefore, equivalent to the construct owl:intersectionOf. This pitfall is related to the common error that appears when defining domains and ranges described in [7].*
 
     
 
