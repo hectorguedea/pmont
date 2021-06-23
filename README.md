@@ -1,1 +1,0 @@
-PMont Political Marketing Ontology
