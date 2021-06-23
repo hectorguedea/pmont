@@ -1,0 +1,1871 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.hectorguedea.com/ontologies/Poltical-Marketing-Ontology.owl#"
+     xml:base="http://www.hectorguedea.com/ontologies/Poltical-Marketing-Ontology.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Political-Marketing-Ontology="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#">
+    <owl:Ontology rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl">
+        <rdfs:comment xml:lang="en">Political ontology for marketing purpose</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCandidate -->
+
+    <owl:ObjectProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCandidate">
+        <owl:inverseOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isCandidateOf"/>
+        <rdfs:domain rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#CandidateCampaign"/>
+        <rdfs:range rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Candidate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCandidateCampaign -->
+
+    <owl:ObjectProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCandidateCampaign">
+        <owl:inverseOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isCandidateCampaignOf"/>
+        <rdfs:domain rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Campaign"/>
+        <rdfs:range rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#CandidateCampaign"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasGeographicalImpact -->
+
+    <owl:ObjectProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasGeographicalImpact">
+        <owl:inverseOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isGeographicalImpactOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Campaign"/>
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#GeographicalImpact"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasIdeology -->
+
+    <owl:ObjectProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasIdeology">
+        <owl:inverseOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isIdeologyOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#EligibleVoter"/>
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Ideology"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPlace -->
+
+    <owl:ObjectProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPlace">
+        <owl:inverseOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPlaceOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Campaign"/>
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization"/>
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPolarity -->
+
+    <owl:ObjectProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPolarity">
+        <rdfs:subPropertyOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPublicationFeature"/>
+        <owl:inverseOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPolarityOf"/>
+        <rdfs:domain rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"/>
+        <rdfs:range rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationPolarity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPoliticalParty -->
+
+    <owl:ObjectProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPoliticalParty">
+        <owl:inverseOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPoliticalPartyOf"/>
+        <rdfs:domain rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#CandidateCampaign"/>
+        <rdfs:range rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPublication -->
+
+    <owl:ObjectProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPublication">
+        <owl:inverseOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization"/>
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPublicationFeature -->
+
+    <owl:ObjectProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPublicationFeature">
+        <owl:inverseOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationFeature"/>
+        <rdfs:domain rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationPolarity"/>
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationSentiment"/>
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationTopic"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasReputation -->
+
+    <owl:ObjectProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasReputation">
+        <owl:inverseOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isReputationOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization"/>
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person"/>
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Reputation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSentiment -->
+
+    <owl:ObjectProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSentiment">
+        <rdfs:subPropertyOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPublicationFeature"/>
+        <owl:inverseOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSentimentOf"/>
+        <rdfs:domain rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"/>
+        <rdfs:range rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationSentiment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSource -->
+
+    <owl:ObjectProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSource">
+        <owl:inverseOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSourceOf"/>
+        <rdfs:domain rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"/>
+        <rdfs:range rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSourceFormat -->
+
+    <owl:ObjectProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSourceFormat">
+        <owl:inverseOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSourceFormatOf"/>
+        <rdfs:domain rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source"/>
+        <rdfs:range rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SourceFormat"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTopic -->
+
+    <owl:ObjectProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTopic">
+        <rdfs:subPropertyOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPublicationFeature"/>
+        <owl:inverseOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isTopicOf"/>
+        <rdfs:domain rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"/>
+        <rdfs:range rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationTopic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTrustworthiness -->
+
+    <owl:ObjectProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTrustworthiness">
+        <owl:inverseOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isTrustworthinessOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization"/>
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person"/>
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Trustworthiness"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isCandidateCampaignOf -->
+
+    <owl:ObjectProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isCandidateCampaignOf">
+        <rdfs:domain rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#CandidateCampaign"/>
+        <rdfs:range rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Campaign"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isCandidateOf -->
+
+    <owl:ObjectProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isCandidateOf">
+        <rdfs:domain rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Candidate"/>
+        <rdfs:range rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#CandidateCampaign"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isGeographicalImpactOf -->
+
+    <owl:ObjectProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isGeographicalImpactOf">
+        <rdfs:domain rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#GeographicalImpact"/>
+        <rdfs:range rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isIdeologyOf -->
+
+    <owl:ObjectProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isIdeologyOf">
+        <rdfs:domain rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Ideology"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#EligibleVoter"/>
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPlaceOf -->
+
+    <owl:ObjectProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPlaceOf">
+        <rdfs:domain rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Place"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Campaign"/>
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization"/>
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPolarityOf -->
+
+    <owl:ObjectProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPolarityOf">
+        <rdfs:subPropertyOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationFeature"/>
+        <rdfs:domain rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationPolarity"/>
+        <rdfs:range rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPoliticalPartyOf -->
+
+    <owl:ObjectProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPoliticalPartyOf">
+        <rdfs:domain rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty"/>
+        <rdfs:range rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#CandidateCampaign"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationFeature -->
+
+    <owl:ObjectProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationFeature">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationPolarity"/>
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationSentiment"/>
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationTopic"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf -->
+
+    <owl:ObjectProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf">
+        <rdfs:domain rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization"/>
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isReputationOf -->
+
+    <owl:ObjectProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isReputationOf">
+        <rdfs:domain rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Reputation"/>
+        <rdfs:range rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization"/>
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person"/>
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSentimentOf -->
+
+    <owl:ObjectProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSentimentOf">
+        <rdfs:subPropertyOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationFeature"/>
+        <rdfs:domain rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationSentiment"/>
+        <rdfs:range rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSourceFormatOf -->
+
+    <owl:ObjectProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSourceFormatOf">
+        <rdfs:domain rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SourceFormat"/>
+        <rdfs:range rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSourceOf -->
+
+    <owl:ObjectProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSourceOf">
+        <rdfs:domain rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source"/>
+        <rdfs:range rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isTopicOf -->
+
+    <owl:ObjectProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isTopicOf">
+        <rdfs:subPropertyOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationFeature"/>
+        <rdfs:domain rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationTopic"/>
+        <rdfs:range rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isTrustworthinessOf -->
+
+    <owl:ObjectProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isTrustworthinessOf">
+        <rdfs:domain rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Trustworthiness"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization"/>
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person"/>
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasBirthday -->
+
+    <owl:DatatypeProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasBirthday">
+        <rdfs:domain rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[Data] Fecha de nacimiento, directamente para el [individuo] en la clase [person]</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCity -->
+
+    <owl:DatatypeProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCity">
+        <rdfs:domain rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasContent -->
+
+    <owl:DatatypeProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasContent">
+        <rdfs:domain rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[Data] Contenido de la publicación</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCountry -->
+
+    <owl:DatatypeProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCountry">
+        <rdfs:domain rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDateEndCampaign -->
+
+    <owl:DatatypeProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDateEndCampaign">
+        <rdfs:domain rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Campaign"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[Data] Fecha de finalización de la campaña política</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDatePublication -->
+
+    <owl:DatatypeProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDatePublication">
+        <rdfs:domain rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDateStartCampaign -->
+
+    <owl:DatatypeProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDateStartCampaign">
+        <rdfs:domain rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Campaign"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[Data] Fecha de inicio de la campaña política</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDescription -->
+
+    <owl:DatatypeProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDescription">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Campaign"/>
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasImageUrl -->
+
+    <owl:DatatypeProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasImageUrl">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization"/>
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person"/>
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasName -->
+
+    <owl:DatatypeProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasName">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization"/>
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPriority -->
+
+    <owl:DatatypeProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPriority">
+        <rdfs:domain rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSocialmediaUrl -->
+
+    <owl:DatatypeProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSocialmediaUrl">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization"/>
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasState -->
+
+    <owl:DatatypeProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasState">
+        <rdfs:domain rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTitle -->
+
+    <owl:DatatypeProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTitle">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Campaign"/>
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasValue -->
+
+    <owl:DatatypeProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasValue">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationTopic"/>
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Reputation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasWebUrl -->
+
+    <owl:DatatypeProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasWebUrl">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization"/>
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person"/>
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#knownAs -->
+
+    <owl:DatatypeProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#knownAs">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Candidate"/>
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Campaign -->
+
+    <owl:Class rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Campaign">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[SuperClase] Campaña, define año de la elección, con fecha de inicio y fin de campaña. La cual se relaciona con las [Clases] PoliticalParty y Candidate</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Candidate -->
+
+    <owl:Class rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Candidate">
+        <rdfs:subClassOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Member"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[SubClase] Candidato</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#CandidateCampaign -->
+
+    <owl:Class rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#CandidateCampaign">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[Clase] Candidato para una campaña específica</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#EligibleVoter -->
+
+    <owl:Class rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#EligibleVoter">
+        <rdfs:subClassOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[SubClase] Votante, contiene [individuos] ciudadanos en general mayores de edad, además la [SubClase] Miembros -&gt; Candidato, almacena [individuos] de candidatos.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#GeographicalImpact -->
+
+    <owl:Class rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#GeographicalImpact">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[Clase] Describe el impacto de la publicación en tres [individuos] local, nacional e internacional.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Ideology -->
+
+    <owl:Class rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Ideology">
+        <rdfs:comment>[Clase] Idiología política impacta en las [Clases] Political Party, ElegibleVoter y MassMedia</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#MassMedia -->
+
+    <owl:Class rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#MassMedia">
+        <rdfs:subClassOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[SubClase] Medios de Comunicación</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Member -->
+
+    <owl:Class rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Member">
+        <rdfs:subClassOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#EligibleVoter"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#NewsItem -->
+
+    <owl:Class rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#NewsItem">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf"/>
+                        <owl:someValuesFrom rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#MassMedia"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[SubClase] Noticia, publicación de la [SubClase] MassMedia</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#NotEligibleVoter -->
+
+    <owl:Class rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#NotEligibleVoter">
+        <rdfs:subClassOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[SubClase] No votantes, contiene [individuos] ciudadanos en general menores de edad.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Opinion -->
+
+    <owl:Class rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Opinion">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf"/>
+                                        <owl:someValuesFrom rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Member"/>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf"/>
+                                <owl:someValuesFrom rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[SubClase] Publicación &quot;Opinión&quot;, está ligado a las opiniones abiertas de los ciudadanos, ya sea ElegibleVoter o NotElegibleVoter, por lo tal a la [Clase] Person</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization -->
+
+    <owl:Class rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization">
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#MassMedia"/>
+            <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty"/>
+        </owl:disjointUnionOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[SuperClase] Organización, contiene las [SubClases] MassMedia y PoliticalParty</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person -->
+
+    <owl:Class rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person">
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#EligibleVoter"/>
+            <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#NotEligibleVoter"/>
+        </owl:disjointUnionOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[SuperClase] Persona, contiene las [SubClases] No Votante y Votante -&gt; Miembro -&gt; Candidato</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Place -->
+
+    <owl:Class rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Place">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[Clase] Lugares, describe las ubicaciones geográficas, ligadas a las [clases] publication, person, organization.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty -->
+
+    <owl:Class rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty">
+        <rdfs:subClassOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[SubClase] Partido político</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Proposal -->
+
+    <owl:Class rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Proposal">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf"/>
+                                <owl:someValuesFrom rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf"/>
+                        <owl:someValuesFrom rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Candidate"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[SubClase] Publicación &quot;Propuesta&quot;, está ligada a la publicaciones de las [Clases] Candidate y PoliticalParty</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication -->
+
+    <owl:Class rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication">
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#NewsItem"/>
+            <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Opinion"/>
+            <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Proposal"/>
+        </owl:disjointUnionOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[SuperClase] Publicación, contiene los diferentes tipos en [SubClases] NewsItem, Opinion, Proposal</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationPolarity -->
+
+    <owl:Class rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationPolarity">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[Clase] Polaridad, contiene los [inviduos] Positive, Neutral, Negative</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationSentiment -->
+
+    <owl:Class rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationSentiment">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[Clase] Sentimiento, describe el grado de sentimiento que tiene una publicación a través de la vinculación con [individuos] (feliz, enojado, etc).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationTopic -->
+
+    <owl:Class rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationTopic">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[Clase] Tema de la publicación, describe temas o categorías en concreto de la publicación.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Reputation -->
+
+    <owl:Class rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Reputation">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[Clase] Reputación, el describe el grado / valor de reputación ligado a las [Clases] Person y Organization</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Semistructured -->
+
+    <owl:Class rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Semistructured">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSourceFormat"/>
+                        <owl:someValuesFrom rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SemistructuredFormat"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[SubClase] Fuente Semi estructurada</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SemistructuredFormat -->
+
+    <owl:Class rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SemistructuredFormat">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SourceFormat"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSourceFormatOf"/>
+                        <owl:someValuesFrom rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Semistructured"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SourceFormat"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[SubClase] Formato Semi estructurado</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source -->
+
+    <owl:Class rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source">
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Semistructured"/>
+            <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Structured"/>
+            <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Unstructured"/>
+        </owl:disjointUnionOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[SuperClase] Fuente, contiene tres [SubClases] con los tipos de fuentes Semi estructuradas, estructuradas y no estructuradas.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SourceFormat -->
+
+    <owl:Class rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SourceFormat">
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SemistructuredFormat"/>
+            <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#StructuredFormat"/>
+            <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#UnstructuredFormat"/>
+        </owl:disjointUnionOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[SuperClase] Formato de fuente, contiene los tres tipos existentes con [SubClases] Semi estructurado, Estructurado y No estructurado</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Structured -->
+
+    <owl:Class rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Structured">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSourceFormat"/>
+                        <owl:someValuesFrom rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#StructuredFormat"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[SubClase] Fuente Estructurada</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#StructuredFormat -->
+
+    <owl:Class rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#StructuredFormat">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SourceFormat"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSourceFormatOf"/>
+                        <owl:someValuesFrom rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Structured"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SourceFormat"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[SubClase] Formato Estructurado</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Trustworthiness -->
+
+    <owl:Class rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Trustworthiness">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[Clase] Integridad/Fidedigno, grado o valor (falso / auténtico) asignado ligado a las [Clases] Person, Organization y Publication</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Unstructured -->
+
+    <owl:Class rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Unstructured">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSourceFormat"/>
+                        <owl:someValuesFrom rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#UnstructuredFormat"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[SubClase] Fuente No estructurada</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#UnstructuredFormat -->
+
+    <owl:Class rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#UnstructuredFormat">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SourceFormat"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSourceFormatOf"/>
+                        <owl:someValuesFrom rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Unstructured"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SourceFormat"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[SubClase] Formato No Estructurado</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#AMLO -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#AMLO">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Candidate"/>
+        <Political-Marketing-Ontology:hasGeographicalImpact rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#National"/>
+        <Political-Marketing-Ontology:hasBirthday rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1953-11-13T00:00:00</Political-Marketing-Ontology:hasBirthday>
+        <Political-Marketing-Ontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Andrés Manuel López Obrador</Political-Marketing-Ontology:hasName>
+        <Political-Marketing-Ontology:hasSocialmediaUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://twitter.com/lopezobrador_</Political-Marketing-Ontology:hasSocialmediaUrl>
+        <Political-Marketing-Ontology:hasSocialmediaUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.facebook.com/lopezobrador.org.mx</Political-Marketing-Ontology:hasSocialmediaUrl>
+        <Political-Marketing-Ontology:hasWebUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://lopezobrador.org.mx/</Political-Marketing-Ontology:hasWebUrl>
+        <Political-Marketing-Ontology:knownAs rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AMLO</Political-Marketing-Ontology:knownAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#AMLO_Proposal1 -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#AMLO_Proposal1">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Proposal"/>
+        <Political-Marketing-Ontology:hasGeographicalImpact rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#National"/>
+        <Political-Marketing-Ontology:hasSource rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Webpage"/>
+        <Political-Marketing-Ontology:hasTopic rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Security"/>
+        <Political-Marketing-Ontology:hasTrustworthiness rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Authentic"/>
+        <Political-Marketing-Ontology:isPublicationOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#AMLO"/>
+        <Political-Marketing-Ontology:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Explorar la posibilidad de una amnistía para combatir la delincuencia.</Political-Marketing-Ontology:hasContent>
+        <Political-Marketing-Ontology:hasDatePublication rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-02T04:35:00</Political-Marketing-Ontology:hasDatePublication>
+        <Political-Marketing-Ontology:hasWebUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.nacion321.com/elecciones/cuales-son-las-propuestas-de-amlo-para-ganar-la-presidencia-este-2018</Political-Marketing-Ontology:hasWebUrl>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#AMLO_Proposal2 -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#AMLO_Proposal2">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Proposal"/>
+        <Political-Marketing-Ontology:hasGeographicalImpact rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#National"/>
+        <Political-Marketing-Ontology:hasSource rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Webpage"/>
+        <Political-Marketing-Ontology:hasTopic rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Gobierno"/>
+        <Political-Marketing-Ontology:hasTrustworthiness rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Authentic"/>
+        <Political-Marketing-Ontology:isPublicationOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#AMLO"/>
+        <Political-Marketing-Ontology:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Recorte de sueldo a funcionarios.</Political-Marketing-Ontology:hasContent>
+        <Political-Marketing-Ontology:hasDatePublication rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-02T04:35:00</Political-Marketing-Ontology:hasDatePublication>
+        <Political-Marketing-Ontology:hasWebUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.nacion321.com/elecciones/cuales-son-las-propuestas-de-amlo-para-ganar-la-presidencia-este-2018</Political-Marketing-Ontology:hasWebUrl>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#AMLO_Proposal3 -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#AMLO_Proposal3">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Proposal"/>
+        <Political-Marketing-Ontology:hasSource rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Webpage"/>
+        <Political-Marketing-Ontology:hasTopic rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Economy"/>
+        <Political-Marketing-Ontology:hasTrustworthiness rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Authentic"/>
+        <Political-Marketing-Ontology:isPublicationOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#AMLO"/>
+        <Political-Marketing-Ontology:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">No habrá gasolinazos</Political-Marketing-Ontology:hasContent>
+        <Political-Marketing-Ontology:hasDatePublication rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-02T04:35:00</Political-Marketing-Ontology:hasDatePublication>
+        <Political-Marketing-Ontology:hasWebUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.nacion321.com/elecciones/cuales-son-las-propuestas-de-amlo-para-ganar-la-presidencia-este-2018</Political-Marketing-Ontology:hasWebUrl>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Angry -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Angry">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationSentiment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Authentic -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Authentic">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Trustworthiness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Centre_right -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Centre_right">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Ideology"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Corruption -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Corruption">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationTopic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Culture_and_Sport -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Culture_and_Sport">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationTopic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Document -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Document">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Unstructured"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Economy -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Economy">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationTopic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Education -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Education">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationTopic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#ElMundo -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#ElMundo">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#MassMedia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#ElPais -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#ElPais">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#MassMedia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#ElUniversal -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#ElUniversal">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#MassMedia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#ElUniversal_NewsItem1 -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#ElUniversal_NewsItem1">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#NewsItem"/>
+        <Political-Marketing-Ontology:hasPolarity rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Positive"/>
+        <Political-Marketing-Ontology:hasSentiment rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Happy"/>
+        <Political-Marketing-Ontology:hasSource rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Webpage"/>
+        <Political-Marketing-Ontology:hasTrustworthiness rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Authentic"/>
+        <Political-Marketing-Ontology:isPublicationOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#ElUniversal"/>
+        <Political-Marketing-Ontology:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ricardo Anaya es segundo lugar en preferencia; José Antonio Meade es tercero; en percepción de triunfo AMLO es primero, pero Anaya y Meade empatan</Political-Marketing-Ontology:hasContent>
+        <Political-Marketing-Ontology:hasDatePublication rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-04-09T02:00:00</Political-Marketing-Ontology:hasDatePublication>
+        <Political-Marketing-Ontology:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AMLO, 10.9 puntos arriba de su competidor más cercano</Political-Marketing-Ontology:hasTitle>
+        <Political-Marketing-Ontology:hasWebUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.eluniversal.com.mx/elecciones-2018/amlo-109-puntos-arriba-de-su-competidor-mas-cercano</Political-Marketing-Ontology:hasWebUrl>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Eleccion_Federal_Mexico_2018 -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Eleccion_Federal_Mexico_2018">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Campaign"/>
+        <Political-Marketing-Ontology:hasCandidateCampaign rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Eleccion_Federal_Mexico_2018_relation"/>
+        <Political-Marketing-Ontology:hasCandidateCampaign rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Eleccion_Federal_Mexico_2018_relation1"/>
+        <Political-Marketing-Ontology:hasCandidateCampaign rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Eleccion_Federal_Mexico_2018_relation2"/>
+        <Political-Marketing-Ontology:hasCandidateCampaign rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Eleccion_Federal_Mexico_2018_relation3"/>
+        <Political-Marketing-Ontology:hasDateEndCampaign rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-27T00:00:00</Political-Marketing-Ontology:hasDateEndCampaign>
+        <Political-Marketing-Ontology:hasDateStartCampaign rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-03-30T00:00:00</Political-Marketing-Ontology:hasDateStartCampaign>
+        <Political-Marketing-Ontology:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Las elecciones federales de México de 2018, denominadas oficialmente por la autoridad electoral como el Proceso Electoral Federal 2017–2018,6​ se llevaron a cabo el domingo 1 de julio de 2018. Fueron organizadas por el Instituto Nacional Electoral (INE) y en ellas se renovaron los siguientes cargos de elección popular a nivel federal.</Political-Marketing-Ontology:hasDescription>
+        <Political-Marketing-Ontology:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elecciones federales de México de 2018</Political-Marketing-Ontology:hasTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Eleccion_Federal_Mexico_2018_relation -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Eleccion_Federal_Mexico_2018_relation">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#CandidateCampaign"/>
+        <Political-Marketing-Ontology:hasCandidate rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Jaime_Rodriguez_Calderon"/>
+        <Political-Marketing-Ontology:hasPoliticalParty rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Independient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Eleccion_Federal_Mexico_2018_relation1 -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Eleccion_Federal_Mexico_2018_relation1">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#CandidateCampaign"/>
+        <Political-Marketing-Ontology:hasCandidate rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#AMLO"/>
+        <Political-Marketing-Ontology:hasPoliticalParty rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Morena"/>
+        <Political-Marketing-Ontology:hasPoliticalParty rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PES"/>
+        <Political-Marketing-Ontology:hasPoliticalParty rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Eleccion_Federal_Mexico_2018_relation2 -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Eleccion_Federal_Mexico_2018_relation2">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#CandidateCampaign"/>
+        <Political-Marketing-Ontology:hasCandidate rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Ricardo_Anaya_Cortes"/>
+        <Political-Marketing-Ontology:hasPoliticalParty rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#MC"/>
+        <Political-Marketing-Ontology:hasPoliticalParty rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PAN"/>
+        <Political-Marketing-Ontology:hasPoliticalParty rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PRD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Eleccion_Federal_Mexico_2018_relation3 -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Eleccion_Federal_Mexico_2018_relation3">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#CandidateCampaign"/>
+        <Political-Marketing-Ontology:hasCandidate rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Jose_Antonio_Meade"/>
+        <Political-Marketing-Ontology:hasPoliticalParty rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PANAL"/>
+        <Political-Marketing-Ontology:hasPoliticalParty rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PRI"/>
+        <Political-Marketing-Ontology:hasPoliticalParty rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PVEM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Excelsior -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Excelsior">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#MassMedia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Excelsior_NewsItem1 -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Excelsior_NewsItem1">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#NewsItem"/>
+        <Political-Marketing-Ontology:hasPolarity rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Negative"/>
+        <Political-Marketing-Ontology:hasSentiment rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Angry"/>
+        <Political-Marketing-Ontology:hasSource rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Webpage"/>
+        <Political-Marketing-Ontology:hasTrustworthiness rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Authentic"/>
+        <Political-Marketing-Ontology:isPublicationOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Excelsior"/>
+        <Political-Marketing-Ontology:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">El senador Ernesto Cordero solicita que se tome en consideración el nuevo video en el que se vincula al aspirante presidencial de la coalición Por México al Frente con actividades ilícitas</Political-Marketing-Ontology:hasContent>
+        <Political-Marketing-Ontology:hasDatePublication rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-12T05:35:00</Political-Marketing-Ontology:hasDatePublication>
+        <Political-Marketing-Ontology:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Presentan denuncia contra Ricardo Anaya por lavado de dinero</Political-Marketing-Ontology:hasTitle>
+        <Political-Marketing-Ontology:hasWebUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.excelsior.com.mx/nacional/presentan-denuncia-contra-ricardo-anaya-por-lavado-de-dinero/1244712</Political-Marketing-Ontology:hasWebUrl>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Facebook -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Facebook">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Semistructured"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Fake -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Fake">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Trustworthiness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#General -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#General">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationTopic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Gobierno -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Gobierno">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationTopic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Happy -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Happy">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationSentiment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Health -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Health">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationTopic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Independient -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Independient">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#International -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#International">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#GeographicalImpact"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#JSON -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#JSON">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SemistructuredFormat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Jaime_Rodriguez_Calderon -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Jaime_Rodriguez_Calderon">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Candidate"/>
+        <Political-Marketing-Ontology:hasBirthday rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1957-12-28T00:00:00</Political-Marketing-Ontology:hasBirthday>
+        <Political-Marketing-Ontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jaime Rodríguez Calderón</Political-Marketing-Ontology:hasName>
+        <Political-Marketing-Ontology:hasSocialmediaUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://twitter.com/JaimeRdzNL</Political-Marketing-Ontology:hasSocialmediaUrl>
+        <Political-Marketing-Ontology:hasSocialmediaUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.facebook.com/JaimeRodriguezElBronco/</Political-Marketing-Ontology:hasSocialmediaUrl>
+        <Political-Marketing-Ontology:hasWebUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.jaimerodriguez.mx/</Political-Marketing-Ontology:hasWebUrl>
+        <Political-Marketing-Ontology:knownAs rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bronco</Political-Marketing-Ontology:knownAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Jaime_Rodriguez_Calderon_Proposal1 -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Jaime_Rodriguez_Calderon_Proposal1">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Proposal"/>
+        <Political-Marketing-Ontology:hasGeographicalImpact rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#National"/>
+        <Political-Marketing-Ontology:hasSource rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Webpage"/>
+        <Political-Marketing-Ontology:hasTopic rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Security"/>
+        <Political-Marketing-Ontology:hasTrustworthiness rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Authentic"/>
+        <Political-Marketing-Ontology:isPublicationOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Jaime_Rodriguez_Calderon"/>
+        <Political-Marketing-Ontology:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pena de muerte a violadores y asesinos</Political-Marketing-Ontology:hasContent>
+        <Political-Marketing-Ontology:hasDatePublication rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-27T16:18:00</Political-Marketing-Ontology:hasDatePublication>
+        <Political-Marketing-Ontology:hasWebUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.nacion321.com/elecciones/cuales-son-las-principales-propuestas-de-jaime-rodriguez-el-bronco</Political-Marketing-Ontology:hasWebUrl>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Jaime_Rodriguez_Calderon_Proposal2 -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Jaime_Rodriguez_Calderon_Proposal2">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Proposal"/>
+        <Political-Marketing-Ontology:hasGeographicalImpact rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#National"/>
+        <Political-Marketing-Ontology:hasSource rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Webpage"/>
+        <Political-Marketing-Ontology:hasTopic rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Gobierno"/>
+        <Political-Marketing-Ontology:hasTrustworthiness rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Authentic"/>
+        <Political-Marketing-Ontology:isPublicationOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Jaime_Rodriguez_Calderon"/>
+        <Political-Marketing-Ontology:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eliminar el financiamiento público de los partidos políticos</Political-Marketing-Ontology:hasContent>
+        <Political-Marketing-Ontology:hasDatePublication rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-27T16:18:00</Political-Marketing-Ontology:hasDatePublication>
+        <Political-Marketing-Ontology:hasWebUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.nacion321.com/elecciones/cuales-son-las-principales-propuestas-de-jaime-rodriguez-el-bronco</Political-Marketing-Ontology:hasWebUrl>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Jose_Antonio_Meade -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Jose_Antonio_Meade">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Candidate"/>
+        <Political-Marketing-Ontology:hasTrustworthiness rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Authentic"/>
+        <Political-Marketing-Ontology:hasBirthday rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1969-02-27T00:00:00</Political-Marketing-Ontology:hasBirthday>
+        <Political-Marketing-Ontology:hasSocialmediaUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://twitter.com/JoseAMeadeK</Political-Marketing-Ontology:hasSocialmediaUrl>
+        <Political-Marketing-Ontology:hasSocialmediaUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.facebook.com/JoseAMeadeK/</Political-Marketing-Ontology:hasSocialmediaUrl>
+        <Political-Marketing-Ontology:knownAs rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Meade</Political-Marketing-Ontology:knownAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Jose_Antonio_Meade_Proposal1 -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Jose_Antonio_Meade_Proposal1">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Proposal"/>
+        <Political-Marketing-Ontology:hasGeographicalImpact rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#National"/>
+        <Political-Marketing-Ontology:hasSource rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Webpage"/>
+        <Political-Marketing-Ontology:hasTopic rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Health"/>
+        <Political-Marketing-Ontology:hasTrustworthiness rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Authentic"/>
+        <Political-Marketing-Ontology:isPublicationOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Jose_Antonio_Meade"/>
+        <Political-Marketing-Ontology:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Consolidar un “Sistema de Seguridad Social Integral” de acceso universal que incluya los seguros de riesgos laborales, salud, invalidez, cesantía y pensiones</Political-Marketing-Ontology:hasContent>
+        <Political-Marketing-Ontology:hasDatePublication rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-04-03T13:04:00</Political-Marketing-Ontology:hasDatePublication>
+        <Political-Marketing-Ontology:hasWebUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.unotv.com/especiales/elecciones-2018/propuestas/detalle/cuales-son-las-propuestas-de-jose-antonio-meade-para-estas-elecciones-349989/</Political-Marketing-Ontology:hasWebUrl>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Jose_Antonio_Meade_Proposal2 -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Jose_Antonio_Meade_Proposal2">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Proposal"/>
+        <Political-Marketing-Ontology:hasGeographicalImpact rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#National"/>
+        <Political-Marketing-Ontology:hasSource rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Webpage"/>
+        <Political-Marketing-Ontology:hasTopic rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Economy"/>
+        <Political-Marketing-Ontology:hasTrustworthiness rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Authentic"/>
+        <Political-Marketing-Ontology:isPublicationOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Jose_Antonio_Meade"/>
+        <Political-Marketing-Ontology:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Instaurar el programa &quot;Avanzar Contigo&quot; que permitirá a cada mexicano elegir el apoyo que mejor le sirva.</Political-Marketing-Ontology:hasContent>
+        <Political-Marketing-Ontology:hasDatePublication rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-04-03T13:04:00</Political-Marketing-Ontology:hasDatePublication>
+        <Political-Marketing-Ontology:hasWebUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.unotv.com/especiales/elecciones-2018/propuestas/detalle/cuales-son-las-propuestas-de-jose-antonio-meade-para-estas-elecciones-349989/</Political-Marketing-Ontology:hasWebUrl>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Left_wing -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Left_wing">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Ideology"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Local -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Local">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#GeographicalImpact"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#MC -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#MC">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty"/>
+        <Political-Marketing-Ontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Partido Movimiento Ciudadano</Political-Marketing-Ontology:hasName>
+        <Political-Marketing-Ontology:knownAs rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Movimiento Ciudadano</Political-Marketing-Ontology:knownAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Milenio -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Milenio">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#MassMedia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Milenio_NewsItem1 -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Milenio_NewsItem1">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#NewsItem"/>
+        <Political-Marketing-Ontology:hasPolarity rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Negative"/>
+        <Political-Marketing-Ontology:hasSentiment rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Angry"/>
+        <Political-Marketing-Ontology:hasSource rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Webpage"/>
+        <Political-Marketing-Ontology:hasTrustworthiness rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Authentic"/>
+        <Political-Marketing-Ontology:isPublicationOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Milenio"/>
+        <Political-Marketing-Ontology:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pese al fracaso de la izquierda en Latinoamérica (que alcanzó su cenit con la Revolución Cubana que, lamentablemente, devino en dictadura), la avanzada populista ha tenido un ascenso considerable en las últimas décadas. El caso más visible y emblemático lo tenemos en Venezuela, con la llamada “revolución bolivariana” iniciada por el extinto Hugo Chávez y continuada por el actual presidente Nicolás Maduro, quien tiene al país en bancarrota. 
+Con la engañifa de distribuir equitativamente la riqueza, acabar con los privilegios de los ricos (esto es disolver la sociedad de clases) y desmonopolizar los medios de producción (regresándoselos al pueblo), los líderes populistas consiguen construir gobiernos que, en el fondo, tienen todas las características de la temible autocracia. Es en este perfil en el que se enmarca el candidato presidencial y jefe único de Morena, Andrés Manuel López Obrador, ni más ni menos que el Rey de las Mentiras Piadosas, toda vez que se ha dedicado a prometer impunemente a la sociedad mexicana lo imposible. Limitémonos a observar dos ejemplos emblemáticos. Dijo López Obrador hace unos días que de llegar a la Presidencia homologaría los salarios entre los trabajadores de México, Estados Unidos y Canadá, insistiendo en que “ no se puede estar pagando a los trabajadores de las maquilas 800 pesos a la semana. No es posible que un trabajador en México gane 10 veces menos que lo que gana un trabajador en Estados Unidos y Canadá”. Bien, analicemos: el salario mínimo de México es de 88.40 pesos diarios. Si una empresa paga dos salarios entonces paga 176.80 pesos por día. El salario mínimo en Estados Unidos oscila entre los 12.50 dólares por hora, de manera que por ocho horas de trabajo al día nos da un total de 100 dólares diarios, esto es mil 850 pesos por día, cantidad que los mexicanos empezarían a ganar de llegar AMLO al gobierno. Suena muy bien, es cierto, pero ¿será esto posible y, sobre todo, viable? ¿Podrán las empresas pagar estos salarios sin llegar a la quiebra, lo que generaría mayor desempleo? Esta propuesta es muy atractiva, pero con un poco de juicio y sentido común nos daremos cuenta de que es una ocurrencia. Otro ejemplo. Todos estamos de acuerdo con que la distribución de la riqueza en México es lacerante: pocos que tienen mucho y muchos que tienen poco. Ante esto, López Obrador propone regalar dinero. Para empezar, promete darle a los jóvenes que ni estudian ni trabajan 3 mil 600 pesos mensuales. Si esto lo multiplicamos por la cantidad de jóvenes que no estudian ni trabajan (2.3 millones) nos da la desorbitada cifra de 8 mil 280 millones de pesos mensuales. Si a esto agregamos su promesa de apoyar en el mismo sentido a las madres solteras (4.5 millones), adultos mayores (9.5 millones) y a las personas pobres con discapacidad (7.1 millones), tendríamos un gasto mensual (sumando todas las cifras) de ¡44 mil 20 millones de pesos! Recibir dinero gratis resulta muy atractivo, pero: ¿usted cree en esta otra chuscada lopezobradorista? La generación de la riqueza tiene una lógica simple: no nace por generación espontánea, se crea, es creada por los que trabajan, generan empleos, construyen fábricas, sostienen negocios, etcétera, esto es quienes pagan impuestos al gobierno para que el gobierno lo distribuya en la sociedad a través de bienes y servicios. Es realmente seductor en términos electorales pensar que recibiremos dinero gratis, ¡todos lo quisiéramos!, pero aparte de ser inviable es una idea reduccionista que intenta obviar que el tesoro del gobierno no se construye con dinero que viene del cielo, sino con los impuestos que pagan los ciudadanos laboralmente productivos, incluidos aquellos jóvenes, madres solteras, personas de la tercera edad y discapacitados que hoy mismo trabajan y que, con la llegada de López Obrador, nada mejor les vendría que dejarlo de hacer, ¿se imagina lo que esto significaría?</Political-Marketing-Ontology:hasContent>
+        <Political-Marketing-Ontology:hasDatePublication rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-04-21T06:24:00</Political-Marketing-Ontology:hasDatePublication>
+        <Political-Marketing-Ontology:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Los delirios populistas de AMLO</Political-Marketing-Ontology:hasTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Morena -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Morena">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty"/>
+        <Political-Marketing-Ontology:hasIdeology rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Left_wing"/>
+        <Political-Marketing-Ontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Morena</Political-Marketing-Ontology:hasName>
+        <Political-Marketing-Ontology:hasWebUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://morena.si</Political-Marketing-Ontology:hasWebUrl>
+        <Political-Marketing-Ontology:knownAs rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Movimiento Regeneración Nacional</Political-Marketing-Ontology:knownAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#MySQL -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#MySQL">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#StructuredFormat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#National -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#National">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#GeographicalImpact"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Negative -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Negative">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationPolarity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Neutral -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Neutral">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationPolarity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PAN -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PAN">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty"/>
+        <Political-Marketing-Ontology:hasIdeology rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Centre_right"/>
+        <Political-Marketing-Ontology:hasIdeology rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Right_wing"/>
+        <Political-Marketing-Ontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Partido Acción Nacional</Political-Marketing-Ontology:hasName>
+        <Political-Marketing-Ontology:hasWebUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.pan.org.mx</Political-Marketing-Ontology:hasWebUrl>
+        <Political-Marketing-Ontology:knownAs rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PAN</Political-Marketing-Ontology:knownAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PANAL -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PANAL">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty"/>
+        <Political-Marketing-Ontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Partido Nueva Alianza</Political-Marketing-Ontology:hasName>
+        <Political-Marketing-Ontology:knownAs rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nueva Alianza</Political-Marketing-Ontology:knownAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PES -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PES">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty"/>
+        <Political-Marketing-Ontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Partido Encuentro Social</Political-Marketing-Ontology:hasName>
+        <Political-Marketing-Ontology:hasWebUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://encuentro.social/</Political-Marketing-Ontology:hasWebUrl>
+        <Political-Marketing-Ontology:knownAs rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Encuentro Social</Political-Marketing-Ontology:knownAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PRD -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PRD">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty"/>
+        <Political-Marketing-Ontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Partido de la Revolución Democrática</Political-Marketing-Ontology:hasName>
+        <Political-Marketing-Ontology:hasWebUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.prd.org.mx/</Political-Marketing-Ontology:hasWebUrl>
+        <Political-Marketing-Ontology:knownAs rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRD</Political-Marketing-Ontology:knownAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PRI -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PRI">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty"/>
+        <Political-Marketing-Ontology:hasIdeology rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Centre_right"/>
+        <Political-Marketing-Ontology:hasIdeology rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Right_wing"/>
+        <Political-Marketing-Ontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Partido Revolucionario Institucional</Political-Marketing-Ontology:hasName>
+        <Political-Marketing-Ontology:hasWebUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://pri.org.mx/somospri</Political-Marketing-Ontology:hasWebUrl>
+        <Political-Marketing-Ontology:knownAs rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRI</Political-Marketing-Ontology:knownAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PT -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PT">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty"/>
+        <Political-Marketing-Ontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Partido del Trabajo</Political-Marketing-Ontology:hasName>
+        <Political-Marketing-Ontology:hasWebUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://partidodeltrabajo.org.mx</Political-Marketing-Ontology:hasWebUrl>
+        <Political-Marketing-Ontology:knownAs rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</Political-Marketing-Ontology:knownAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PVEM -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PVEM">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty"/>
+        <Political-Marketing-Ontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Partido Verde Ecologista de México</Political-Marketing-Ontology:hasName>
+        <Political-Marketing-Ontology:hasWebUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.partidoverde.org.mx/</Political-Marketing-Ontology:hasWebUrl>
+        <Political-Marketing-Ontology:knownAs rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Partido Verde</Political-Marketing-Ontology:knownAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Positive -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Positive">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationPolarity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#RelationalDataBase -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#RelationalDataBase">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Structured"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Ricardo_Anaya_Cortes -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Ricardo_Anaya_Cortes">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Candidate"/>
+        <Political-Marketing-Ontology:hasBirthday rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1979-02-25T00:00:00</Political-Marketing-Ontology:hasBirthday>
+        <Political-Marketing-Ontology:hasSocialmediaUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://twitter.com/ricardoanayac</Political-Marketing-Ontology:hasSocialmediaUrl>
+        <Political-Marketing-Ontology:hasSocialmediaUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.facebook.com/RicardoAnayaC/</Political-Marketing-Ontology:hasSocialmediaUrl>
+        <Political-Marketing-Ontology:hasWebUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.ricardoanaya.com.mx/</Political-Marketing-Ontology:hasWebUrl>
+        <Political-Marketing-Ontology:knownAs rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anaya</Political-Marketing-Ontology:knownAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Ricardo_Anaya_Cortes_Proposal1 -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Ricardo_Anaya_Cortes_Proposal1">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Proposal"/>
+        <Political-Marketing-Ontology:hasGeographicalImpact rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#National"/>
+        <Political-Marketing-Ontology:hasSource rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Webpage"/>
+        <Political-Marketing-Ontology:hasTopic rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Corruption"/>
+        <Political-Marketing-Ontology:hasTrustworthiness rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Authentic"/>
+        <Political-Marketing-Ontology:isPublicationOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Ricardo_Anaya_Cortes"/>
+        <Political-Marketing-Ontology:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eliminar el fuero constitucional para el presidente de la República y para todas y todos los servidores públicos del país</Political-Marketing-Ontology:hasContent>
+        <Political-Marketing-Ontology:hasDatePublication rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-04-02T17:56:00</Political-Marketing-Ontology:hasDatePublication>
+        <Political-Marketing-Ontology:hasWebUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.unotv.com/especiales/elecciones-2018/propuestas/detalle/cuales-son-las-propuestas-de-ricardo-anaya-para-estas-elecciones-284883/</Political-Marketing-Ontology:hasWebUrl>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Ricardo_Anaya_Cortes_Proposal2 -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Ricardo_Anaya_Cortes_Proposal2">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Proposal"/>
+        <Political-Marketing-Ontology:hasGeographicalImpact rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#National"/>
+        <Political-Marketing-Ontology:hasSource rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Webpage"/>
+        <Political-Marketing-Ontology:hasTopic rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Security"/>
+        <Political-Marketing-Ontology:hasTrustworthiness rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Authentic"/>
+        <Political-Marketing-Ontology:isPublicationOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Ricardo_Anaya_Cortes"/>
+        <Political-Marketing-Ontology:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crear una nueva secretaria, organismo o entidad de seguridad ciudadana, separada de la Secretaría de Gobernación</Political-Marketing-Ontology:hasContent>
+        <Political-Marketing-Ontology:hasDatePublication rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-04-02T17:56:00</Political-Marketing-Ontology:hasDatePublication>
+        <Political-Marketing-Ontology:hasWebUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.unotv.com/especiales/elecciones-2018/propuestas/detalle/cuales-son-las-propuestas-de-ricardo-anaya-para-estas-elecciones-284883/</Political-Marketing-Ontology:hasWebUrl>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Right_wing -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Right_wing">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Ideology"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Sad -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Sad">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationSentiment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Security -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Security">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationTopic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Twitter -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Twitter">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Semistructured"/>
+        <Political-Marketing-Ontology:hasSourceFormat rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#JSON"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Txt -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Txt">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#UnstructuredFormat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Voter1 -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Voter1">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#EligibleVoter"/>
+        <Political-Marketing-Ontology:hasTrustworthiness rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Authentic"/>
+        <Political-Marketing-Ontology:hasCountry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">México</Political-Marketing-Ontology:hasCountry>
+        <Political-Marketing-Ontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Limonita</Political-Marketing-Ontology:hasName>
+        <Political-Marketing-Ontology:hasSocialmediaUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://twitter.com/Limoooncita</Political-Marketing-Ontology:hasSocialmediaUrl>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Voter1_Opinion -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Voter1_Opinion">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Opinion"/>
+        <Political-Marketing-Ontology:hasGeographicalImpact rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#National"/>
+        <Political-Marketing-Ontology:hasPolarity rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Negative"/>
+        <Political-Marketing-Ontology:hasSentiment rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Angry"/>
+        <Political-Marketing-Ontology:hasSource rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Twitter"/>
+        <Political-Marketing-Ontology:hasTopic rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#General"/>
+        <Political-Marketing-Ontology:isPublicationOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Voter1"/>
+        <Political-Marketing-Ontology:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">- Si piensas votar por AMLO, hazlo. 
+- Si piensas votar por Anaya, hazlo.
+- Si piensas votar por Meade, hazlo. 
+- Si piensas votar por “El Bronco”, hazlo. 
+
+PERO DEJA DE ESTAR CHINGADO Y CÁLLATE ALV.</Political-Marketing-Ontology:hasContent>
+        <Political-Marketing-Ontology:hasDatePublication rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-28T00:00:00</Political-Marketing-Ontology:hasDatePublication>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Voter2 -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Voter2">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#EligibleVoter"/>
+        <Political-Marketing-Ontology:hasTrustworthiness rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Authentic"/>
+        <Political-Marketing-Ontology:hasCountry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">México</Political-Marketing-Ontology:hasCountry>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Voter2_Opinion -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Voter2_Opinion">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Opinion"/>
+        <Political-Marketing-Ontology:hasGeographicalImpact rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#National"/>
+        <Political-Marketing-Ontology:hasPolarity rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Negative"/>
+        <Political-Marketing-Ontology:hasSentiment rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Angry"/>
+        <Political-Marketing-Ontology:hasSource rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Twitter"/>
+        <Political-Marketing-Ontology:hasTopic rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#General"/>
+        <Political-Marketing-Ontology:isPublicationOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Voter2"/>
+        <Political-Marketing-Ontology:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Les invito las chelas o lo que sea pero por favor NO VOTEN POR AMLO.</Political-Marketing-Ontology:hasContent>
+        <Political-Marketing-Ontology:hasDatePublication rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-28T00:00:00</Political-Marketing-Ontology:hasDatePublication>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Voter3 -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Voter3">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#EligibleVoter"/>
+        <Political-Marketing-Ontology:hasTrustworthiness rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Authentic"/>
+        <Political-Marketing-Ontology:hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDMX</Political-Marketing-Ontology:hasCity>
+        <Political-Marketing-Ontology:hasCountry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">México</Political-Marketing-Ontology:hasCountry>
+        <Political-Marketing-Ontology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Patty</Political-Marketing-Ontology:hasName>
+        <Political-Marketing-Ontology:hasSocialmediaUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://twitter.com/La_Patty_Boop</Political-Marketing-Ontology:hasSocialmediaUrl>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Voter3_Opinion -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Voter3_Opinion">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Opinion"/>
+        <Political-Marketing-Ontology:hasGeographicalImpact rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#National"/>
+        <Political-Marketing-Ontology:hasPolarity rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Positive"/>
+        <Political-Marketing-Ontology:hasSentiment rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Happy"/>
+        <Political-Marketing-Ontology:hasSource rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Twitter"/>
+        <Political-Marketing-Ontology:hasTopic rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#General"/>
+        <Political-Marketing-Ontology:isPublicationOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Voter3"/>
+        <Political-Marketing-Ontology:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">El día que @lopezobrador_ habló en el Zócalo cuando el desafuero, lloré y lloré ese día y varios más, y cuando me acuerdo me da tristeza.
+Pero ahora, cuando gane AMLO iré al Zócalo a festejar el triunfo, igual voy a llorar, pero esta vez será de felicidad. Y espero verlos ahí.</Political-Marketing-Ontology:hasContent>
+        <Political-Marketing-Ontology:hasDatePublication rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-30T00:00:00</Political-Marketing-Ontology:hasDatePublication>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Webpage -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Webpage">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Unstructured"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Word -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Word">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#UnstructuredFormat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#XML -->
+
+    <owl:NamedIndividual rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#XML">
+        <rdf:type rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SemistructuredFormat"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
