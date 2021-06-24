@@ -8,6 +8,8 @@
 
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl> rdf:type owl:Ontology ;
                                                                        <http://creativecommons.org/ns#license> "https://creativecommons.org/licenses/by-nc/4.0"@en ;
+                                                                       <http://purl.org/dc/elements/1.1/description> "Semantic Based Knowledge of Political Marketing" ;
+                                                                       <http://purl.org/dc/elements/1.1/title> "PMont Political Marketing Ontology" ;
                                                                        rdfs:comment "Political ontology for marketing purpose"@en .
 
 #################################################################
@@ -16,6 +18,14 @@
 
 ###  http://creativecommons.org/ns#license
 <http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/license
@@ -31,24 +41,28 @@
 :hasCandidate rdf:type owl:ObjectProperty ;
               owl:inverseOf :isCandidateOf ;
               rdfs:domain :CandidateCampaign ;
-              rdfs:range :Candidate .
+              rdfs:range :Candidate ;
+              rdfs:label "hasCandidate" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCandidateCampaign
 :hasCandidateCampaign rdf:type owl:ObjectProperty ;
                       owl:inverseOf :isCandidateCampaignOf ;
                       rdfs:domain :Campaign ;
-                      rdfs:range :CandidateCampaign .
+                      rdfs:range :CandidateCampaign ;
+                      rdfs:label "hasCandidateCampaign" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasGeographicalImpact
 :hasGeographicalImpact rdf:type owl:ObjectProperty ;
+                       owl:inverseOf :isGeographicalImpactOf ;
                        rdfs:domain [ rdf:type owl:Class ;
                                      owl:unionOf ( :Campaign
                                                    :Publication
                                                  )
                                    ] ;
-                       rdfs:range :GeographicalImpact .
+                       rdfs:range :GeographicalImpact ;
+                       rdfs:label "hasGeographicalImpact" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasIdeology
@@ -59,7 +73,8 @@
                                          :Organization
                                        )
                          ] ;
-             rdfs:range :Ideology .
+             rdfs:range :Ideology ;
+             rdfs:label "hasIdeology" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPlace
@@ -71,7 +86,8 @@
                                       :Person
                                     )
                       ] ;
-          rdfs:range :Place .
+          rdfs:range :Place ;
+          rdfs:label "hasPlace" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPolarity
@@ -79,14 +95,16 @@
              rdfs:subPropertyOf :hasPublicationFeature ;
              owl:inverseOf :isPolarityOf ;
              rdfs:domain :Publication ;
-             rdfs:range :PublicationPolarity .
+             rdfs:range :PublicationPolarity ;
+             rdfs:label "hasPolarity" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPoliticalParty
 :hasPoliticalParty rdf:type owl:ObjectProperty ;
                    owl:inverseOf :isPoliticalPartyOf ;
                    rdfs:domain :CandidateCampaign ;
-                   rdfs:range :PoliticalParty .
+                   rdfs:range :PoliticalParty ;
+                   rdfs:label "hasPoliticalParty" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPublication
@@ -97,7 +115,8 @@
                                             :Person
                                           )
                             ] ;
-                rdfs:range :Publication .
+                rdfs:range :Publication ;
+                rdfs:label "hasPublication" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPublicationFeature
@@ -109,18 +128,21 @@
                                                   :PublicationSentiment
                                                   :PublicationTopic
                                                 )
-                                  ] .
+                                  ] ;
+                       rdfs:label "hasPublicationFeature" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasReputation
 :hasReputation rdf:type owl:ObjectProperty ;
+               owl:inverseOf :isReputationOf ;
                rdfs:domain [ rdf:type owl:Class ;
                              owl:unionOf ( :Organization
                                            :Person
                                            :Publication
                                          )
                            ] ;
-               rdfs:range :Reputation .
+               rdfs:range :Reputation ;
+               rdfs:label "hasReputation" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSentiment
@@ -128,21 +150,24 @@
               rdfs:subPropertyOf :hasPublicationFeature ;
               owl:inverseOf :isSentimentOf ;
               rdfs:domain :Publication ;
-              rdfs:range :PublicationSentiment .
+              rdfs:range :PublicationSentiment ;
+              rdfs:label "hasSentiment" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSource
 :hasSource rdf:type owl:ObjectProperty ;
            owl:inverseOf :isSourceOf ;
            rdfs:domain :Publication ;
-           rdfs:range :Source .
+           rdfs:range :Source ;
+           rdfs:label "hasSource" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSourceFormat
 :hasSourceFormat rdf:type owl:ObjectProperty ;
                  owl:inverseOf :isSourceFormatOf ;
                  rdfs:domain :Source ;
-                 rdfs:range :SourceFormat .
+                 rdfs:range :SourceFormat ;
+                 rdfs:label "hasSourceFormat" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTopic
@@ -150,7 +175,8 @@
           rdfs:subPropertyOf :hasPublicationFeature ;
           owl:inverseOf :isTopicOf ;
           rdfs:domain :Publication ;
-          rdfs:range :PublicationTopic .
+          rdfs:range :PublicationTopic ;
+          rdfs:label "hasTopic" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTrustworthiness
@@ -162,25 +188,33 @@
                                                 :Publication
                                               )
                                 ] ;
-                    rdfs:range :Trustworthiness .
+                    rdfs:range :Trustworthiness ;
+                    rdfs:label "hasTrustworthiness" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isCandidateCampaignOf
 :isCandidateCampaignOf rdf:type owl:ObjectProperty ;
                        rdfs:domain :CandidateCampaign ;
-                       rdfs:range :Campaign .
+                       rdfs:range :Campaign ;
+                       rdfs:label "isCandidateCampaignOf" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isCandidateOf
 :isCandidateOf rdf:type owl:ObjectProperty ;
                rdfs:domain :Candidate ;
-               rdfs:range :CandidateCampaign .
+               rdfs:range :CandidateCampaign ;
+               rdfs:label "isCandidateOf" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isGeographicalImpactOf
 :isGeographicalImpactOf rdf:type owl:ObjectProperty ;
                         rdfs:domain :GeographicalImpact ;
-                        rdfs:range :Publication .
+                        rdfs:range [ rdf:type owl:Class ;
+                                     owl:unionOf ( :Campaign
+                                                   :Publication
+                                                 )
+                                   ] ;
+                        rdfs:label "isGeographicalImpactOf" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isIdeologyOf
@@ -190,7 +224,8 @@
                            owl:unionOf ( :EligibleVoter
                                          :Organization
                                        )
-                         ] .
+                         ] ;
+              rdfs:label "isIdeologyOf" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPlaceOf
@@ -201,20 +236,23 @@
                                       :Organization
                                       :Person
                                     )
-                      ] .
+                      ] ;
+           rdfs:label "isPlaceOf" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPolarityOf
 :isPolarityOf rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :isPublicationFeature ;
               rdfs:domain :PublicationPolarity ;
-              rdfs:range :Publication .
+              rdfs:range :Publication ;
+              rdfs:label "isPolarityOf" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPoliticalPartyOf
 :isPoliticalPartyOf rdf:type owl:ObjectProperty ;
                     rdfs:domain :PoliticalParty ;
-                    rdfs:range :CandidateCampaign .
+                    rdfs:range :CandidateCampaign ;
+                    rdfs:label "isPoliticalPartyOf" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationFeature
@@ -225,7 +263,8 @@
                                                   :PublicationTopic
                                                 )
                                   ] ;
-                      rdfs:range :Publication .
+                      rdfs:range :Publication ;
+                      rdfs:label "isPublicationFeature" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf
@@ -235,45 +274,50 @@
                               owl:unionOf ( :Organization
                                             :Person
                                           )
-                            ] .
+                            ] ;
+                 rdfs:label "isPublicationOf" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isReputationOf
 :isReputationOf rdf:type owl:ObjectProperty ;
                 rdfs:domain :Reputation ;
-                rdfs:range :Person ,
-                           [ rdf:type owl:Class ;
+                rdfs:range [ rdf:type owl:Class ;
                              owl:unionOf ( :Organization
                                            :Person
                                            :Publication
                                          )
-                           ] .
+                           ] ;
+                rdfs:label "isReputationOf" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSentimentOf
 :isSentimentOf rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :isPublicationFeature ;
                rdfs:domain :PublicationSentiment ;
-               rdfs:range :Publication .
+               rdfs:range :Publication ;
+               rdfs:label "isSentimentOf" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSourceFormatOf
 :isSourceFormatOf rdf:type owl:ObjectProperty ;
                   rdfs:domain :SourceFormat ;
-                  rdfs:range :Source .
+                  rdfs:range :Source ;
+                  rdfs:label "isSourceFormatOf" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSourceOf
 :isSourceOf rdf:type owl:ObjectProperty ;
             rdfs:domain :Source ;
-            rdfs:range :Publication .
+            rdfs:range :Publication ;
+            rdfs:label "isSourceOf" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isTopicOf
 :isTopicOf rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf :isPublicationFeature ;
            rdfs:domain :PublicationTopic ;
-           rdfs:range :Publication .
+           rdfs:range :Publication ;
+           rdfs:label "isTopicOf" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isTrustworthinessOf
@@ -284,7 +328,8 @@
                                                 :Person
                                                 :Publication
                                               )
-                                ] .
+                                ] ;
+                     rdfs:label "isTrustworthinessOf" .
 
 
 #################################################################
@@ -295,46 +340,53 @@
 :hasBirthday rdf:type owl:DatatypeProperty ;
              rdfs:domain :Person ;
              rdfs:range xsd:dateTime ;
-             rdfs:comment "[Data] Fecha de nacimiento, directamente para el [individuo] en la clase [person]" .
+             rdfs:comment "[Data] Fecha de nacimiento, directamente para el [individuo] en la clase [person]" ;
+             rdfs:label "hasBirthday" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCity
 :hasCity rdf:type owl:DatatypeProperty ;
          rdfs:domain :Place ;
-         rdfs:range xsd:string .
+         rdfs:range xsd:string ;
+         rdfs:label "hasCity" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasContent
 :hasContent rdf:type owl:DatatypeProperty ;
             rdfs:domain :Publication ;
             rdfs:range xsd:string ;
-            rdfs:comment "[Data] Contenido de la publicación" .
+            rdfs:comment "[Data] Contenido de la publicación" ;
+            rdfs:label "hasContent" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCountry
 :hasCountry rdf:type owl:DatatypeProperty ;
             rdfs:domain :Place ;
-            rdfs:range xsd:string .
+            rdfs:range xsd:string ;
+            rdfs:label "hasCountry" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDateEndCampaign
 :hasDateEndCampaign rdf:type owl:DatatypeProperty ;
                     rdfs:domain :Campaign ;
                     rdfs:range xsd:dateTime ;
-                    rdfs:comment "[Data] Fecha de finalización de la campaña política" .
+                    rdfs:comment "[Data] Fecha de finalización de la campaña política" ;
+                    rdfs:label "hasDateEndCampaign" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDatePublication
 :hasDatePublication rdf:type owl:DatatypeProperty ;
                     rdfs:domain :Publication ;
-                    rdfs:range xsd:dateTime .
+                    rdfs:range xsd:dateTime ;
+                    rdfs:label "hasDatePublication" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDateStartCampaign
 :hasDateStartCampaign rdf:type owl:DatatypeProperty ;
                       rdfs:domain :Campaign ;
                       rdfs:range xsd:dateTime ;
-                      rdfs:comment "[Data] Fecha de inicio de la campaña política" .
+                      rdfs:comment "[Data] Fecha de inicio de la campaña política" ;
+                      rdfs:label "hasDateStartCampaign" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDescription
@@ -344,7 +396,8 @@
                                             :Organization
                                           )
                             ] ;
-                rdfs:range xsd:string .
+                rdfs:range xsd:string ;
+                rdfs:label "hasDescription" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasImageUrl
@@ -355,7 +408,8 @@
                                          :Publication
                                        )
                          ] ;
-             rdfs:range xsd:string .
+             rdfs:range xsd:string ;
+             rdfs:label "hasImageUrl" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasName
@@ -365,13 +419,15 @@
                                      :Person
                                    )
                      ] ;
-         rdfs:range xsd:string .
+         rdfs:range xsd:string ;
+         rdfs:label "hasName" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPriority
 :hasPriority rdf:type owl:DatatypeProperty ;
              rdfs:domain :Source ;
-             rdfs:range xsd:int .
+             rdfs:range xsd:int ;
+             rdfs:label "hasPriority" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSocialmediaUrl
@@ -381,13 +437,15 @@
                                                :Person
                                              )
                                ] ;
-                   rdfs:range xsd:string .
+                   rdfs:range xsd:string ;
+                   rdfs:label "hasSocialMediaUrl" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasState
 :hasState rdf:type owl:DatatypeProperty ;
           rdfs:domain :Place ;
-          rdfs:range xsd:string .
+          rdfs:range xsd:string ;
+          rdfs:label "hasState" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTitle
@@ -397,7 +455,8 @@
                                       :Publication
                                     )
                       ] ;
-          rdfs:range xsd:string .
+          rdfs:range xsd:string ;
+          rdfs:label "hasTitle" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasValue
@@ -407,7 +466,8 @@
                                       :Reputation
                                     )
                       ] ;
-          rdfs:range xsd:string .
+          rdfs:range xsd:string ;
+          rdfs:label "hasValue" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasWebUrl
@@ -418,7 +478,8 @@
                                        :Source
                                      )
                        ] ;
-           rdfs:range xsd:string .
+           rdfs:range xsd:string ;
+           rdfs:label "hasWebUrl" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#knownAs
@@ -428,7 +489,8 @@
                                      :Organization
                                    )
                      ] ;
-         rdfs:range xsd:string .
+         rdfs:range xsd:string ;
+         rdfs:label "knownAs" .
 
 
 #################################################################
@@ -437,45 +499,53 @@
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Campaign
 :Campaign rdf:type owl:Class ;
-          rdfs:comment "[SuperClase] Campaña, define año de la elección, con fecha de inicio y fin de campaña. La cual se relaciona con las [Clases] PoliticalParty y Candidate" .
+          rdfs:comment "[SuperClase] Campaña, define año de la elección, con fecha de inicio y fin de campaña. La cual se relaciona con las [Clases] PoliticalParty y Candidate" ;
+          rdfs:label "Campaign" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Candidate
 :Candidate rdf:type owl:Class ;
            rdfs:subClassOf :Member ;
-           rdfs:comment "[SubClase] Candidato" .
+           rdfs:comment "[SubClase] Candidato" ;
+           rdfs:label "Candidate" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#CandidateCampaign
 :CandidateCampaign rdf:type owl:Class ;
-                   rdfs:comment "[Clase] Candidato para una campaña específica" .
+                   rdfs:comment "[Clase] Candidato para una campaña específica" ;
+                   rdfs:label "CandidateCampaign" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#EligibleVoter
 :EligibleVoter rdf:type owl:Class ;
                rdfs:subClassOf :Person ;
-               rdfs:comment "[SubClase] Votante, contiene [individuos] ciudadanos en general mayores de edad, además la [SubClase] Miembros -> Candidato, almacena [individuos] de candidatos." .
+               rdfs:comment "[SubClase] Votante, contiene [individuos] ciudadanos en general mayores de edad, además la [SubClase] Miembros -> Candidato, almacena [individuos] de candidatos." ;
+               rdfs:label "EligibleVoter" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#GeographicalImpact
 :GeographicalImpact rdf:type owl:Class ;
-                    rdfs:comment "[Clase] Describe el impacto de la publicación en tres [individuos] local, nacional e internacional." .
+                    rdfs:comment "[Clase] Describe el impacto de la publicación en tres [individuos] local, nacional e internacional." ;
+                    rdfs:label "GeagraphicalImpact" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Ideology
 :Ideology rdf:type owl:Class ;
-          rdfs:comment "[Clase] Idiología política impacta en las [Clases] Political Party, ElegibleVoter y MassMedia" .
+          rdfs:comment "[Clase] Idiología política impacta en las [Clases] Political Party, ElegibleVoter y MassMedia" ;
+          rdfs:label "Ideology" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#MassMedia
 :MassMedia rdf:type owl:Class ;
            rdfs:subClassOf :Organization ;
-           rdfs:comment "[SubClase] Medios de Comunicación" .
+           rdfs:comment "[SubClase] Medios de Comunicación" ;
+           rdfs:label "MassMedia" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Member
 :Member rdf:type owl:Class ;
-        rdfs:subClassOf :EligibleVoter .
+        rdfs:subClassOf :EligibleVoter ;
+        rdfs:label "Member" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#NewsItem
@@ -489,13 +559,15 @@
                                 rdf:type owl:Class
                               ] ;
           rdfs:subClassOf :Publication ;
-          rdfs:comment "[SubClase] Noticia, publicación de la [SubClase] MassMedia" .
+          rdfs:comment "[SubClase] Noticia, publicación de la [SubClase] MassMedia" ;
+          rdfs:label "NewsItem" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#NotEligibleVoter
 :NotEligibleVoter rdf:type owl:Class ;
                   rdfs:subClassOf :Person ;
-                  rdfs:comment "[SubClase] No votantes, contiene [individuos] ciudadanos en general menores de edad." .
+                  rdfs:comment "[SubClase] No votantes, contiene [individuos] ciudadanos en general menores de edad." ;
+                  rdfs:label "NotEligibleVoter" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Opinion
@@ -518,7 +590,8 @@
                                rdf:type owl:Class
                              ] ;
          rdfs:subClassOf :Publication ;
-         rdfs:comment "[SubClase] Publicación \"Opinión\", está ligado a las opiniones abiertas de los ciudadanos, ya sea ElegibleVoter o NotElegibleVoter, por lo tal a la [Clase] Person" .
+         rdfs:comment "[SubClase] Publicación \"Opinión\", está ligado a las opiniones abiertas de los ciudadanos, ya sea ElegibleVoter o NotElegibleVoter, por lo tal a la [Clase] Person" ;
+         rdfs:label "Opinion" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization
@@ -526,7 +599,8 @@
               owl:disjointUnionOf ( :MassMedia
                                     :PoliticalParty
                                   ) ;
-              rdfs:comment "[SuperClase] Organización, contiene las [SubClases] MassMedia y PoliticalParty" .
+              rdfs:comment "[SuperClase] Organización, contiene las [SubClases] MassMedia y PoliticalParty" ;
+              rdfs:label "Organization" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person
@@ -534,18 +608,21 @@
         owl:disjointUnionOf ( :EligibleVoter
                               :NotEligibleVoter
                             ) ;
-        rdfs:comment "[SuperClase] Persona, contiene las [SubClases] No Votante y Votante -> Miembro -> Candidato" .
+        rdfs:comment "[SuperClase] Persona, contiene las [SubClases] No Votante y Votante -> Miembro -> Candidato" ;
+        rdfs:label "Person" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Place
 :Place rdf:type owl:Class ;
-       rdfs:comment "[Clase] Lugares, describe las ubicaciones geográficas, ligadas a las [clases] publication, person, organization." .
+       rdfs:comment "[Clase] Lugares, describe las ubicaciones geográficas, ligadas a las [clases] publication, person, organization." ;
+       rdfs:label "Place" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty
 :PoliticalParty rdf:type owl:Class ;
                 rdfs:subClassOf :Organization ;
-                rdfs:comment "[SubClase] Partido político" .
+                rdfs:comment "[SubClase] Partido político" ;
+                rdfs:label "PoliticalParty" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Proposal
@@ -566,7 +643,8 @@
                                             )
                               ] ;
           rdfs:subClassOf :Publication ;
-          rdfs:comment "[SubClase] Publicación \"Propuesta\", está ligada a la publicaciones de las [Clases] Candidate y PoliticalParty" .
+          rdfs:comment "[SubClase] Publicación \"Propuesta\", está ligada a la publicaciones de las [Clases] Candidate y PoliticalParty" ;
+          rdfs:label "Proposal" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication
@@ -575,27 +653,32 @@
                                    :Opinion
                                    :Proposal
                                  ) ;
-             rdfs:comment "[SuperClase] Publicación, contiene los diferentes tipos en [SubClases] NewsItem, Opinion, Proposal" .
+             rdfs:comment "[SuperClase] Publicación, contiene los diferentes tipos en [SubClases] NewsItem, Opinion, Proposal" ;
+             rdfs:label "Publication" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationPolarity
 :PublicationPolarity rdf:type owl:Class ;
-                     rdfs:comment "[Clase] Polaridad, contiene los [inviduos] Positive, Neutral, Negative" .
+                     rdfs:comment "[Clase] Polaridad, contiene los [inviduos] Positive, Neutral, Negative" ;
+                     rdfs:label "PublicationPolarity" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationSentiment
 :PublicationSentiment rdf:type owl:Class ;
-                      rdfs:comment "[Clase] Sentimiento, describe el grado de sentimiento que tiene una publicación a través de la vinculación con [individuos] (feliz, enojado, etc)." .
+                      rdfs:comment "[Clase] Sentimiento, describe el grado de sentimiento que tiene una publicación a través de la vinculación con [individuos] (feliz, enojado, etc)." ;
+                      rdfs:label "PublicationSentiment" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationTopic
 :PublicationTopic rdf:type owl:Class ;
-                  rdfs:comment "[Clase] Tema de la publicación, describe temas o categorías en concreto de la publicación." .
+                  rdfs:comment "[Clase] Tema de la publicación, describe temas o categorías en concreto de la publicación." ;
+                  rdfs:label "PublicationTopic" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Reputation
 :Reputation rdf:type owl:Class ;
-            rdfs:comment "[Clase] Reputación, el describe el grado / valor de reputación ligado a las [Clases] Person y Organization" .
+            rdfs:comment "[Clase] Reputación, el describe el grado / valor de reputación ligado a las [Clases] Person y Organization" ;
+            rdfs:label "Reputation" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Semistructured
@@ -609,7 +692,8 @@
                                       rdf:type owl:Class
                                     ] ;
                 rdfs:subClassOf :Source ;
-                rdfs:comment "[SubClase] Fuente Semi estructurada" .
+                rdfs:comment "[SubClase] Fuente Semi estructurada" ;
+                rdfs:label "Semistructured" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SemistructuredFormat
@@ -623,7 +707,8 @@
                                             rdf:type owl:Class
                                           ] ;
                       rdfs:subClassOf :SourceFormat ;
-                      rdfs:comment "[SubClase] Formato Semi estructurado" .
+                      rdfs:comment "[SubClase] Formato Semi estructurado" ;
+                      rdfs:label "SemistructuredFormat" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source
@@ -632,7 +717,8 @@
                               :Structured
                               :Unstructured
                             ) ;
-        rdfs:comment "[SuperClase] Fuente, contiene tres [SubClases] con los tipos de fuentes Semi estructuradas, estructuradas y no estructuradas." .
+        rdfs:comment "[SuperClase] Fuente, contiene tres [SubClases] con los tipos de fuentes Semi estructuradas, estructuradas y no estructuradas." ;
+        rdfs:label "Source" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SourceFormat
@@ -641,7 +727,8 @@
                                     :StructuredFormat
                                     :UnstructuredFormat
                                   ) ;
-              rdfs:comment "[SuperClase] Formato de fuente, contiene los tres tipos existentes con [SubClases] Semi estructurado, Estructurado y No estructurado" .
+              rdfs:comment "[SuperClase] Formato de fuente, contiene los tres tipos existentes con [SubClases] Semi estructurado, Estructurado y No estructurado" ;
+              rdfs:label "SourceFormat" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Structured
@@ -655,7 +742,8 @@
                                   rdf:type owl:Class
                                 ] ;
             rdfs:subClassOf :Source ;
-            rdfs:comment "[SubClase] Fuente Estructurada" .
+            rdfs:comment "[SubClase] Fuente Estructurada" ;
+            rdfs:label "Structured" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#StructuredFormat
@@ -669,12 +757,14 @@
                                         rdf:type owl:Class
                                       ] ;
                   rdfs:subClassOf :SourceFormat ;
-                  rdfs:comment "[SubClase] Formato Estructurado" .
+                  rdfs:comment "[SubClase] Formato Estructurado" ;
+                  rdfs:label "StructuredFormat" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Trustworthiness
 :Trustworthiness rdf:type owl:Class ;
-                 rdfs:comment "[Clase] Integridad/Fidedigno, grado o valor (falso / auténtico) asignado ligado a las [Clases] Person, Organization y Publication" .
+                 rdfs:comment "[Clase] Integridad/Fidedigno, grado o valor (falso / auténtico) asignado ligado a las [Clases] Person, Organization y Publication" ;
+                 rdfs:label "Trustworthiness" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Unstructured
@@ -688,7 +778,8 @@
                                     rdf:type owl:Class
                                   ] ;
               rdfs:subClassOf :Source ;
-              rdfs:comment "[SubClase] Fuente No estructurada" .
+              rdfs:comment "[SubClase] Fuente No estructurada" ;
+              rdfs:label "Unstructured" .
 
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#UnstructuredFormat
@@ -702,7 +793,8 @@
                                           rdf:type owl:Class
                                         ] ;
                     rdfs:subClassOf :SourceFormat ;
-                    rdfs:comment "[SubClase] Formato No Estructurado" .
+                    rdfs:comment "[SubClase] Formato No Estructurado" ;
+                    rdfs:label "UnstructuredFormat" .
 
 
 #################################################################
