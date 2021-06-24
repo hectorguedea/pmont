@@ -1,5 +1,7 @@
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl> <http://creativecommons.org/ns#license> "https://creativecommons.org/licenses/by-nc/4.0"@en .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl> <http://purl.org/dc/elements/1.1/description> "Semantic Based Knowledge of Political Marketing" .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl> <http://purl.org/dc/elements/1.1/title> "PMont Political Marketing Ontology" .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl> <http://www.w3.org/2000/01/rdf-schema#comment> "Political ontology for marketing purpose"@en .
 # 
 # 
@@ -12,6 +14,12 @@
 # 
 # http://creativecommons.org/ns#license
 <http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/license
 <http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -31,15 +39,18 @@
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCandidate> <http://www.w3.org/2002/07/owl#inverseOf> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isCandidateOf> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCandidate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#CandidateCampaign> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCandidate> <http://www.w3.org/2000/01/rdf-schema#range> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Candidate> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCandidate> <http://www.w3.org/2000/01/rdf-schema#label> "hasCandidate" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCandidateCampaign
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCandidateCampaign> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCandidateCampaign> <http://www.w3.org/2002/07/owl#inverseOf> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isCandidateCampaignOf> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCandidateCampaign> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Campaign> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCandidateCampaign> <http://www.w3.org/2000/01/rdf-schema#range> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#CandidateCampaign> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCandidateCampaign> <http://www.w3.org/2000/01/rdf-schema#label> "hasCandidateCampaign" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasGeographicalImpact
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasGeographicalImpact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasGeographicalImpact> <http://www.w3.org/2002/07/owl#inverseOf> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isGeographicalImpactOf> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasGeographicalImpact> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
 _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
@@ -50,6 +61,7 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication> .
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasGeographicalImpact> <http://www.w3.org/2000/01/rdf-schema#range> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#GeographicalImpact> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasGeographicalImpact> <http://www.w3.org/2000/01/rdf-schema#label> "hasGeographicalImpact" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasIdeology
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasIdeology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -64,6 +76,7 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization> .
 _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasIdeology> <http://www.w3.org/2000/01/rdf-schema#range> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Ideology> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasIdeology> <http://www.w3.org/2000/01/rdf-schema#label> "hasIdeology" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPlace
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPlace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -81,6 +94,7 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person> .
 _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPlace> <http://www.w3.org/2000/01/rdf-schema#range> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Place> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPlace> <http://www.w3.org/2000/01/rdf-schema#label> "hasPlace" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPolarity
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPolarity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -88,12 +102,14 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPolarity> <http://www.w3.org/2002/07/owl#inverseOf> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPolarityOf> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPolarity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPolarity> <http://www.w3.org/2000/01/rdf-schema#range> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationPolarity> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPolarity> <http://www.w3.org/2000/01/rdf-schema#label> "hasPolarity" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPoliticalParty
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPoliticalParty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPoliticalParty> <http://www.w3.org/2002/07/owl#inverseOf> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPoliticalPartyOf> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPoliticalParty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#CandidateCampaign> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPoliticalParty> <http://www.w3.org/2000/01/rdf-schema#range> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPoliticalParty> <http://www.w3.org/2000/01/rdf-schema#label> "hasPoliticalParty" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPublication
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPublication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -108,6 +124,7 @@ _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person> .
 _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPublication> <http://www.w3.org/2000/01/rdf-schema#range> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPublication> <http://www.w3.org/2000/01/rdf-schema#label> "hasPublication" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPublicationFeature
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPublicationFeature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -125,9 +142,11 @@ _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
 _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationTopic> .
 _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPublicationFeature> <http://www.w3.org/2000/01/rdf-schema#label> "hasPublicationFeature" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasReputation
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasReputation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasReputation> <http://www.w3.org/2002/07/owl#inverseOf> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isReputationOf> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasReputation> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid18 .
 _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:genid18 <http://www.w3.org/2002/07/owl#unionOf> _:genid21 .
@@ -141,6 +160,7 @@ _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication> .
 _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasReputation> <http://www.w3.org/2000/01/rdf-schema#range> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Reputation> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasReputation> <http://www.w3.org/2000/01/rdf-schema#label> "hasReputation" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSentiment
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSentiment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -148,18 +168,21 @@ _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSentiment> <http://www.w3.org/2002/07/owl#inverseOf> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSentimentOf> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSentiment> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSentiment> <http://www.w3.org/2000/01/rdf-schema#range> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationSentiment> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSentiment> <http://www.w3.org/2000/01/rdf-schema#label> "hasSentiment" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSource
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSource> <http://www.w3.org/2002/07/owl#inverseOf> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSourceOf> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSource> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSource> <http://www.w3.org/2000/01/rdf-schema#range> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSource> <http://www.w3.org/2000/01/rdf-schema#label> "hasSource" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSourceFormat
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSourceFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSourceFormat> <http://www.w3.org/2002/07/owl#inverseOf> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSourceFormatOf> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSourceFormat> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSourceFormat> <http://www.w3.org/2000/01/rdf-schema#range> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SourceFormat> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSourceFormat> <http://www.w3.org/2000/01/rdf-schema#label> "hasSourceFormat" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTopic
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTopic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -167,6 +190,7 @@ _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTopic> <http://www.w3.org/2002/07/owl#inverseOf> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isTopicOf> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTopic> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTopic> <http://www.w3.org/2000/01/rdf-schema#range> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationTopic> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTopic> <http://www.w3.org/2000/01/rdf-schema#label> "hasTopic" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTrustworthiness
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTrustworthiness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -184,145 +208,168 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication> .
 _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTrustworthiness> <http://www.w3.org/2000/01/rdf-schema#range> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Trustworthiness> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTrustworthiness> <http://www.w3.org/2000/01/rdf-schema#label> "hasTrustworthiness" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isCandidateCampaignOf
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isCandidateCampaignOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isCandidateCampaignOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#CandidateCampaign> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isCandidateCampaignOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Campaign> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isCandidateCampaignOf> <http://www.w3.org/2000/01/rdf-schema#label> "isCandidateCampaignOf" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isCandidateOf
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isCandidateOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isCandidateOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Candidate> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isCandidateOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#CandidateCampaign> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isCandidateOf> <http://www.w3.org/2000/01/rdf-schema#label> "isCandidateOf" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isGeographicalImpactOf
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isGeographicalImpactOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isGeographicalImpactOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#GeographicalImpact> .
-<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isGeographicalImpactOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isGeographicalImpactOf> <http://www.w3.org/2000/01/rdf-schema#range> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid26 <http://www.w3.org/2002/07/owl#unionOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Campaign> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isGeographicalImpactOf> <http://www.w3.org/2000/01/rdf-schema#label> "isGeographicalImpactOf" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isIdeologyOf
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isIdeologyOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isIdeologyOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Ideology> .
-<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isIdeologyOf> <http://www.w3.org/2000/01/rdf-schema#range> _:genid26 .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid26 <http://www.w3.org/2002/07/owl#unionOf> _:genid28 .
-_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#EligibleVoter> .
-_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization> .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isIdeologyOf> <http://www.w3.org/2000/01/rdf-schema#range> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid29 <http://www.w3.org/2002/07/owl#unionOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#EligibleVoter> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isIdeologyOf> <http://www.w3.org/2000/01/rdf-schema#label> "isIdeologyOf" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPlaceOf
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPlaceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPlaceOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Place> .
-<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPlaceOf> <http://www.w3.org/2000/01/rdf-schema#range> _:genid29 .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid29 <http://www.w3.org/2002/07/owl#unionOf> _:genid32 .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Campaign> .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid31 .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization> .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
-_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person> .
-_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPlaceOf> <http://www.w3.org/2000/01/rdf-schema#range> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid32 <http://www.w3.org/2002/07/owl#unionOf> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Campaign> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPlaceOf> <http://www.w3.org/2000/01/rdf-schema#label> "isPlaceOf" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPolarityOf
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPolarityOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPolarityOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationFeature> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPolarityOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationPolarity> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPolarityOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPolarityOf> <http://www.w3.org/2000/01/rdf-schema#label> "isPolarityOf" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPoliticalPartyOf
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPoliticalPartyOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPoliticalPartyOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPoliticalPartyOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#CandidateCampaign> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPoliticalPartyOf> <http://www.w3.org/2000/01/rdf-schema#label> "isPoliticalPartyOf" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationFeature
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationFeature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationFeature> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid33 .
-_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid33 <http://www.w3.org/2002/07/owl#unionOf> _:genid36 .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationPolarity> .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationSentiment> .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
-_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationTopic> .
-_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationFeature> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid36 <http://www.w3.org/2002/07/owl#unionOf> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationPolarity> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationSentiment> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationTopic> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationFeature> <http://www.w3.org/2000/01/rdf-schema#range> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationFeature> <http://www.w3.org/2000/01/rdf-schema#label> "isPublicationFeature" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication> .
-<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf> <http://www.w3.org/2000/01/rdf-schema#range> _:genid37 .
-_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid37 <http://www.w3.org/2002/07/owl#unionOf> _:genid39 .
-_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization> .
-_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person> .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf> <http://www.w3.org/2000/01/rdf-schema#range> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid40 <http://www.w3.org/2002/07/owl#unionOf> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf> <http://www.w3.org/2000/01/rdf-schema#label> "isPublicationOf" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isReputationOf
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isReputationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isReputationOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Reputation> .
-<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isReputationOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person> .
-<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isReputationOf> <http://www.w3.org/2000/01/rdf-schema#range> _:genid40 .
-_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid40 <http://www.w3.org/2002/07/owl#unionOf> _:genid43 .
-_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization> .
-_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid42 .
-_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person> .
-_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid41 .
-_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication> .
-_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isReputationOf> <http://www.w3.org/2000/01/rdf-schema#range> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid43 <http://www.w3.org/2002/07/owl#unionOf> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isReputationOf> <http://www.w3.org/2000/01/rdf-schema#label> "isReputationOf" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSentimentOf
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSentimentOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSentimentOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationFeature> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSentimentOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationSentiment> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSentimentOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSentimentOf> <http://www.w3.org/2000/01/rdf-schema#label> "isSentimentOf" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSourceFormatOf
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSourceFormatOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSourceFormatOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SourceFormat> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSourceFormatOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSourceFormatOf> <http://www.w3.org/2000/01/rdf-schema#label> "isSourceFormatOf" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSourceOf
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSourceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSourceOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSourceOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSourceOf> <http://www.w3.org/2000/01/rdf-schema#label> "isSourceOf" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isTopicOf
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isTopicOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isTopicOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationFeature> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isTopicOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationTopic> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isTopicOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isTopicOf> <http://www.w3.org/2000/01/rdf-schema#label> "isTopicOf" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isTrustworthinessOf
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isTrustworthinessOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isTrustworthinessOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Trustworthiness> .
-<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isTrustworthinessOf> <http://www.w3.org/2000/01/rdf-schema#range> _:genid44 .
-_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid44 <http://www.w3.org/2002/07/owl#unionOf> _:genid47 .
-_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization> .
-_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid46 .
-_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person> .
-_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid45 .
-_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication> .
-_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isTrustworthinessOf> <http://www.w3.org/2000/01/rdf-schema#range> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid47 <http://www.w3.org/2002/07/owl#unionOf> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isTrustworthinessOf> <http://www.w3.org/2000/01/rdf-schema#label> "isTrustworthinessOf" .
 # 
 # 
 # 
@@ -338,90 +385,81 @@ _:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasBirthday> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasBirthday> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasBirthday> <http://www.w3.org/2000/01/rdf-schema#comment> "[Data] Fecha de nacimiento, directamente para el [individuo] en la clase [person]" .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasBirthday> <http://www.w3.org/2000/01/rdf-schema#label> "hasBirthday" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCity
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Place> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCity> <http://www.w3.org/2000/01/rdf-schema#label> "hasCity" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasContent
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasContent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasContent> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasContent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasContent> <http://www.w3.org/2000/01/rdf-schema#comment> "[Data] Contenido de la publicación" .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasContent> <http://www.w3.org/2000/01/rdf-schema#label> "hasContent" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCountry
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCountry> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Place> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCountry> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCountry> <http://www.w3.org/2000/01/rdf-schema#label> "hasCountry" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDateEndCampaign
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDateEndCampaign> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDateEndCampaign> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Campaign> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDateEndCampaign> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDateEndCampaign> <http://www.w3.org/2000/01/rdf-schema#comment> "[Data] Fecha de finalización de la campaña política" .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDateEndCampaign> <http://www.w3.org/2000/01/rdf-schema#label> "hasDateEndCampaign" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDatePublication
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDatePublication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDatePublication> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDatePublication> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDatePublication> <http://www.w3.org/2000/01/rdf-schema#label> "hasDatePublication" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDateStartCampaign
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDateStartCampaign> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDateStartCampaign> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Campaign> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDateStartCampaign> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDateStartCampaign> <http://www.w3.org/2000/01/rdf-schema#comment> "[Data] Fecha de inicio de la campaña política" .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDateStartCampaign> <http://www.w3.org/2000/01/rdf-schema#label> "hasDateStartCampaign" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDescription
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDescription> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid48 .
-_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid48 <http://www.w3.org/2002/07/owl#unionOf> _:genid50 .
-_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Campaign> .
-_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid49 .
-_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization> .
-_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDescription> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid51 <http://www.w3.org/2002/07/owl#unionOf> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Campaign> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDescription> <http://www.w3.org/2000/01/rdf-schema#label> "hasDescription" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasImageUrl
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasImageUrl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasImageUrl> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid51 .
-_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid51 <http://www.w3.org/2002/07/owl#unionOf> _:genid54 .
-_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization> .
-_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid53 .
-_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person> .
-_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid52 .
-_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication> .
-_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasImageUrl> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-# 
-# https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasName
-<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasName> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid55 .
-_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid55 <http://www.w3.org/2002/07/owl#unionOf> _:genid57 .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasImageUrl> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid54 <http://www.w3.org/2002/07/owl#unionOf> _:genid57 .
 _:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization> .
 _:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid56 .
 _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person> .
-_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasImageUrl> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasImageUrl> <http://www.w3.org/2000/01/rdf-schema#label> "hasImageUrl" .
 # 
-# https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPriority
-<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPriority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPriority> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source> .
-<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPriority> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
-# 
-# https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSocialmediaUrl
-<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSocialmediaUrl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSocialmediaUrl> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid58 .
+# https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasName
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasName> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid58 .
 _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:genid58 <http://www.w3.org/2002/07/owl#unionOf> _:genid60 .
 _:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
@@ -430,67 +468,93 @@ _:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid59 .
 _:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person> .
 _:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasName> <http://www.w3.org/2000/01/rdf-schema#label> "hasName" .
+# 
+# https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPriority
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPriority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPriority> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPriority> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPriority> <http://www.w3.org/2000/01/rdf-schema#label> "hasPriority" .
+# 
+# https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSocialmediaUrl
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSocialmediaUrl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSocialmediaUrl> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid61 <http://www.w3.org/2002/07/owl#unionOf> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSocialmediaUrl> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSocialmediaUrl> <http://www.w3.org/2000/01/rdf-schema#label> "hasSocialMediaUrl" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasState
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasState> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Place> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasState> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasState> <http://www.w3.org/2000/01/rdf-schema#label> "hasState" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTitle
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTitle> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid61 .
-_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid61 <http://www.w3.org/2002/07/owl#unionOf> _:genid63 .
-_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Campaign> .
-_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid62 .
-_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication> .
-_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-# 
-# https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasValue
-<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasValue> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid64 .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTitle> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid64 .
 _:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:genid64 <http://www.w3.org/2002/07/owl#unionOf> _:genid66 .
 _:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationTopic> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Campaign> .
 _:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid65 .
 _:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Reputation> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication> .
 _:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTitle> <http://www.w3.org/2000/01/rdf-schema#label> "hasTitle" .
+# 
+# https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasValue
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasValue> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid67 <http://www.w3.org/2002/07/owl#unionOf> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationTopic> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Reputation> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasValue> <http://www.w3.org/2000/01/rdf-schema#label> "hasValue" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasWebUrl
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasWebUrl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasWebUrl> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid67 .
-_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid67 <http://www.w3.org/2002/07/owl#unionOf> _:genid70 .
-_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization> .
-_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid69 .
-_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person> .
-_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid68 .
-_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source> .
-_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasWebUrl> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid70 <http://www.w3.org/2002/07/owl#unionOf> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasWebUrl> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasWebUrl> <http://www.w3.org/2000/01/rdf-schema#label> "hasWebUrl" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#knownAs
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#knownAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#knownAs> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid71 .
-_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid71 <http://www.w3.org/2002/07/owl#unionOf> _:genid73 .
-_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Candidate> .
-_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid72 .
-_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization> .
-_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#knownAs> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid74 <http://www.w3.org/2002/07/owl#unionOf> _:genid76 .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Candidate> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#knownAs> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#knownAs> <http://www.w3.org/2000/01/rdf-schema#label> "knownAs" .
 # 
 # 
 # 
@@ -504,312 +568,342 @@ _:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Campaign
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Campaign> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Campaign> <http://www.w3.org/2000/01/rdf-schema#comment> "[SuperClase] Campaña, define año de la elección, con fecha de inicio y fin de campaña. La cual se relaciona con las [Clases] PoliticalParty y Candidate" .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Campaign> <http://www.w3.org/2000/01/rdf-schema#label> "Campaign" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Candidate
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Candidate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Candidate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Member> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Candidate> <http://www.w3.org/2000/01/rdf-schema#comment> "[SubClase] Candidato" .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Candidate> <http://www.w3.org/2000/01/rdf-schema#label> "Candidate" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#CandidateCampaign
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#CandidateCampaign> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#CandidateCampaign> <http://www.w3.org/2000/01/rdf-schema#comment> "[Clase] Candidato para una campaña específica" .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#CandidateCampaign> <http://www.w3.org/2000/01/rdf-schema#label> "CandidateCampaign" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#EligibleVoter
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#EligibleVoter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#EligibleVoter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#EligibleVoter> <http://www.w3.org/2000/01/rdf-schema#comment> "[SubClase] Votante, contiene [individuos] ciudadanos en general mayores de edad, además la [SubClase] Miembros -> Candidato, almacena [individuos] de candidatos." .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#EligibleVoter> <http://www.w3.org/2000/01/rdf-schema#label> "EligibleVoter" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#GeographicalImpact
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#GeographicalImpact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#GeographicalImpact> <http://www.w3.org/2000/01/rdf-schema#comment> "[Clase] Describe el impacto de la publicación en tres [individuos] local, nacional e internacional." .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#GeographicalImpact> <http://www.w3.org/2000/01/rdf-schema#label> "GeagraphicalImpact" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Ideology
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Ideology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Ideology> <http://www.w3.org/2000/01/rdf-schema#comment> "[Clase] Idiología política impacta en las [Clases] Political Party, ElegibleVoter y MassMedia" .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Ideology> <http://www.w3.org/2000/01/rdf-schema#label> "Ideology" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#MassMedia
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#MassMedia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#MassMedia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#MassMedia> <http://www.w3.org/2000/01/rdf-schema#comment> "[SubClase] Medios de Comunicación" .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#MassMedia> <http://www.w3.org/2000/01/rdf-schema#label> "MassMedia" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Member
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Member> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Member> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#EligibleVoter> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Member> <http://www.w3.org/2000/01/rdf-schema#label> "Member" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#NewsItem
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#NewsItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#NewsItem> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid74 .
-_:genid74 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid77 .
-_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication> .
-_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid75 .
-_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid76 .
-_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid76 <http://www.w3.org/2002/07/owl#onProperty> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf> .
-_:genid76 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#MassMedia> .
-_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#NewsItem> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid77 .
+_:genid77 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid80 .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid79 <http://www.w3.org/2002/07/owl#onProperty> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf> .
+_:genid79 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#MassMedia> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#NewsItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#NewsItem> <http://www.w3.org/2000/01/rdf-schema#comment> "[SubClase] Noticia, publicación de la [SubClase] MassMedia" .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#NewsItem> <http://www.w3.org/2000/01/rdf-schema#label> "NewsItem" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#NotEligibleVoter
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#NotEligibleVoter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#NotEligibleVoter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#NotEligibleVoter> <http://www.w3.org/2000/01/rdf-schema#comment> "[SubClase] No votantes, contiene [individuos] ciudadanos en general menores de edad." .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#NotEligibleVoter> <http://www.w3.org/2000/01/rdf-schema#label> "NotEligibleVoter" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Opinion
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Opinion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Opinion> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid78 .
-_:genid78 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid86 .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Opinion> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid81 .
+_:genid81 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid89 .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid82 .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid83 .
+_:genid83 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid86 .
 _:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication> .
-_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid79 .
-_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid80 .
-_:genid80 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid83 .
-_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid84 .
-_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid84 <http://www.w3.org/2002/07/owl#complementOf> _:genid85 .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid87 .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid87 <http://www.w3.org/2002/07/owl#complementOf> _:genid88 .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid88 <http://www.w3.org/2002/07/owl#onProperty> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf> .
+_:genid88 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Member> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid84 .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid85 .
 _:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid85 <http://www.w3.org/2002/07/owl#onProperty> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf> .
-_:genid85 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Member> .
-_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid81 .
-_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid82 .
-_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid82 <http://www.w3.org/2002/07/owl#onProperty> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf> .
-_:genid82 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person> .
-_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid85 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Opinion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Opinion> <http://www.w3.org/2000/01/rdf-schema#comment> "[SubClase] Publicación \"Opinión\", está ligado a las opiniones abiertas de los ciudadanos, ya sea ElegibleVoter o NotElegibleVoter, por lo tal a la [Clase] Person" .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Opinion> <http://www.w3.org/2000/01/rdf-schema#label> "Opinion" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid88 .
-_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#MassMedia> .
-_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid87 .
-_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty> .
-_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid91 .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#MassMedia> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid90 .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "[SuperClase] Organización, contiene las [SubClases] MassMedia y PoliticalParty" .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organization" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid90 .
-_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#EligibleVoter> .
-_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid89 .
-_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#NotEligibleVoter> .
-_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid93 .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#EligibleVoter> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid92 .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#NotEligibleVoter> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "[SuperClase] Persona, contiene las [SubClases] No Votante y Votante -> Miembro -> Candidato" .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Place
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Place> <http://www.w3.org/2000/01/rdf-schema#comment> "[Clase] Lugares, describe las ubicaciones geográficas, ligadas a las [clases] publication, person, organization." .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Place> <http://www.w3.org/2000/01/rdf-schema#label> "Place" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty> <http://www.w3.org/2000/01/rdf-schema#comment> "[SubClase] Partido político" .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty> <http://www.w3.org/2000/01/rdf-schema#label> "PoliticalParty" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Proposal
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Proposal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Proposal> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid91 .
-_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid91 <http://www.w3.org/2002/07/owl#unionOf> _:genid94 .
-_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid95 .
-_:genid95 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid98 .
-_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication> .
-_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid96 .
-_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid97 .
-_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid97 <http://www.w3.org/2002/07/owl#onProperty> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf> .
-_:genid97 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty> .
-_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid92 .
-_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid93 .
-_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid93 <http://www.w3.org/2002/07/owl#onProperty> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf> .
-_:genid93 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Candidate> .
-_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Proposal> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid94 .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid94 <http://www.w3.org/2002/07/owl#unionOf> _:genid97 .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid98 .
+_:genid98 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid101 .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid99 .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid100 .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid100 <http://www.w3.org/2002/07/owl#onProperty> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf> .
+_:genid100 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid95 .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid96 .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid96 <http://www.w3.org/2002/07/owl#onProperty> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf> .
+_:genid96 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Candidate> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Proposal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Proposal> <http://www.w3.org/2000/01/rdf-schema#comment> "[SubClase] Publicación \"Propuesta\", está ligada a la publicaciones de las [Clases] Candidate y PoliticalParty" .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Proposal> <http://www.w3.org/2000/01/rdf-schema#label> "Proposal" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid101 .
-_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#NewsItem> .
-_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid100 .
-_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Opinion> .
-_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid99 .
-_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Proposal> .
-_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid104 .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#NewsItem> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid103 .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Opinion> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid102 .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Proposal> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication> <http://www.w3.org/2000/01/rdf-schema#comment> "[SuperClase] Publicación, contiene los diferentes tipos en [SubClases] NewsItem, Opinion, Proposal" .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication> <http://www.w3.org/2000/01/rdf-schema#label> "Publication" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationPolarity
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationPolarity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationPolarity> <http://www.w3.org/2000/01/rdf-schema#comment> "[Clase] Polaridad, contiene los [inviduos] Positive, Neutral, Negative" .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationPolarity> <http://www.w3.org/2000/01/rdf-schema#label> "PublicationPolarity" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationSentiment
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationSentiment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationSentiment> <http://www.w3.org/2000/01/rdf-schema#comment> "[Clase] Sentimiento, describe el grado de sentimiento que tiene una publicación a través de la vinculación con [individuos] (feliz, enojado, etc)." .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationSentiment> <http://www.w3.org/2000/01/rdf-schema#label> "PublicationSentiment" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationTopic
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationTopic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationTopic> <http://www.w3.org/2000/01/rdf-schema#comment> "[Clase] Tema de la publicación, describe temas o categorías en concreto de la publicación." .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationTopic> <http://www.w3.org/2000/01/rdf-schema#label> "PublicationTopic" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Reputation
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Reputation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Reputation> <http://www.w3.org/2000/01/rdf-schema#comment> "[Clase] Reputación, el describe el grado / valor de reputación ligado a las [Clases] Person y Organization" .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Reputation> <http://www.w3.org/2000/01/rdf-schema#label> "Reputation" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Semistructured
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Semistructured> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Semistructured> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid102 .
-_:genid102 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid105 .
-_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source> .
-_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid103 .
-_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid104 .
-_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid104 <http://www.w3.org/2002/07/owl#onProperty> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSourceFormat> .
-_:genid104 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SemistructuredFormat> .
-_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Semistructured> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid105 .
+_:genid105 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid108 .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid106 .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid107 .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid107 <http://www.w3.org/2002/07/owl#onProperty> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSourceFormat> .
+_:genid107 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SemistructuredFormat> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Semistructured> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Semistructured> <http://www.w3.org/2000/01/rdf-schema#comment> "[SubClase] Fuente Semi estructurada" .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Semistructured> <http://www.w3.org/2000/01/rdf-schema#label> "Semistructured" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SemistructuredFormat
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SemistructuredFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SemistructuredFormat> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid106 .
-_:genid106 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid109 .
-_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SourceFormat> .
-_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid107 .
-_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid108 .
-_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid108 <http://www.w3.org/2002/07/owl#onProperty> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSourceFormatOf> .
-_:genid108 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Semistructured> .
-_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SemistructuredFormat> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid109 .
+_:genid109 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid112 .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SourceFormat> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid110 .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid111 .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid111 <http://www.w3.org/2002/07/owl#onProperty> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSourceFormatOf> .
+_:genid111 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Semistructured> .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SemistructuredFormat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SourceFormat> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SemistructuredFormat> <http://www.w3.org/2000/01/rdf-schema#comment> "[SubClase] Formato Semi estructurado" .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SemistructuredFormat> <http://www.w3.org/2000/01/rdf-schema#label> "SemistructuredFormat" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid112 .
-_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Semistructured> .
-_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid111 .
-_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Structured> .
-_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid110 .
-_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Unstructured> .
-_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid115 .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Semistructured> .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid114 .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Structured> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid113 .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Unstructured> .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source> <http://www.w3.org/2000/01/rdf-schema#comment> "[SuperClase] Fuente, contiene tres [SubClases] con los tipos de fuentes Semi estructuradas, estructuradas y no estructuradas." .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source> <http://www.w3.org/2000/01/rdf-schema#label> "Source" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SourceFormat
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SourceFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SourceFormat> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid115 .
-_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SemistructuredFormat> .
-_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid114 .
-_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#StructuredFormat> .
-_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid113 .
-_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#UnstructuredFormat> .
-_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SourceFormat> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid118 .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SemistructuredFormat> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid117 .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#StructuredFormat> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid116 .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#UnstructuredFormat> .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SourceFormat> <http://www.w3.org/2000/01/rdf-schema#comment> "[SuperClase] Formato de fuente, contiene los tres tipos existentes con [SubClases] Semi estructurado, Estructurado y No estructurado" .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SourceFormat> <http://www.w3.org/2000/01/rdf-schema#label> "SourceFormat" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Structured
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Structured> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Structured> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid116 .
-_:genid116 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid119 .
-_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source> .
-_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid117 .
-_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid118 .
-_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid118 <http://www.w3.org/2002/07/owl#onProperty> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSourceFormat> .
-_:genid118 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#StructuredFormat> .
-_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Structured> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid119 .
+_:genid119 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid122 .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source> .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid120 .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid121 .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid121 <http://www.w3.org/2002/07/owl#onProperty> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSourceFormat> .
+_:genid121 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#StructuredFormat> .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Structured> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Structured> <http://www.w3.org/2000/01/rdf-schema#comment> "[SubClase] Fuente Estructurada" .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Structured> <http://www.w3.org/2000/01/rdf-schema#label> "Structured" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#StructuredFormat
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#StructuredFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#StructuredFormat> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid120 .
-_:genid120 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid123 .
-_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SourceFormat> .
-_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid121 .
-_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid122 .
-_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid122 <http://www.w3.org/2002/07/owl#onProperty> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSourceFormatOf> .
-_:genid122 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Structured> .
-_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#StructuredFormat> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid123 .
+_:genid123 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid126 .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SourceFormat> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid124 .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid125 .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid125 <http://www.w3.org/2002/07/owl#onProperty> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSourceFormatOf> .
+_:genid125 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Structured> .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#StructuredFormat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SourceFormat> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#StructuredFormat> <http://www.w3.org/2000/01/rdf-schema#comment> "[SubClase] Formato Estructurado" .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#StructuredFormat> <http://www.w3.org/2000/01/rdf-schema#label> "StructuredFormat" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Trustworthiness
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Trustworthiness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Trustworthiness> <http://www.w3.org/2000/01/rdf-schema#comment> "[Clase] Integridad/Fidedigno, grado o valor (falso / auténtico) asignado ligado a las [Clases] Person, Organization y Publication" .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Trustworthiness> <http://www.w3.org/2000/01/rdf-schema#label> "Trustworthiness" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Unstructured
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Unstructured> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Unstructured> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid124 .
-_:genid124 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid127 .
-_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source> .
-_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid125 .
-_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid126 .
-_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid126 <http://www.w3.org/2002/07/owl#onProperty> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSourceFormat> .
-_:genid126 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#UnstructuredFormat> .
-_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Unstructured> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid127 .
+_:genid127 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid130 .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source> .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid128 .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid129 .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid129 <http://www.w3.org/2002/07/owl#onProperty> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSourceFormat> .
+_:genid129 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#UnstructuredFormat> .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Unstructured> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Unstructured> <http://www.w3.org/2000/01/rdf-schema#comment> "[SubClase] Fuente No estructurada" .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Unstructured> <http://www.w3.org/2000/01/rdf-schema#label> "Unstructured" .
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#UnstructuredFormat
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#UnstructuredFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#UnstructuredFormat> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid128 .
-_:genid128 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid131 .
-_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SourceFormat> .
-_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid129 .
-_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid130 .
-_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid130 <http://www.w3.org/2002/07/owl#onProperty> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSourceFormatOf> .
-_:genid130 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Unstructured> .
-_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#UnstructuredFormat> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid131 .
+_:genid131 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid134 .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SourceFormat> .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid132 .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid133 .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid133 <http://www.w3.org/2002/07/owl#onProperty> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSourceFormatOf> .
+_:genid133 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Unstructured> .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#UnstructuredFormat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SourceFormat> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#UnstructuredFormat> <http://www.w3.org/2000/01/rdf-schema#comment> "[SubClase] Formato No Estructurado" .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#UnstructuredFormat> <http://www.w3.org/2000/01/rdf-schema#label> "UnstructuredFormat" .
 # 
 # 
 # 
