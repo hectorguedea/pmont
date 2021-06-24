@@ -1,5 +1,22 @@
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl> <http://creativecommons.org/ns#license> "https://creativecommons.org/licenses/by-nc/4.0"@en .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl> <http://www.w3.org/2000/01/rdf-schema#comment> "Political ontology for marketing purpose"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/license> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#backwardCompatibleWith> .
+# 
 # 
 # 
 # #################################################################
@@ -23,7 +40,6 @@
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasGeographicalImpact
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasGeographicalImpact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasGeographicalImpact> <http://www.w3.org/2002/07/owl#inverseOf> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isGeographicalImpactOf> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasGeographicalImpact> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
 _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
@@ -112,7 +128,6 @@ _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasReputation
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasReputation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasReputation> <http://www.w3.org/2002/07/owl#inverseOf> <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isReputationOf> .
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasReputation> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid18 .
 _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:genid18 <http://www.w3.org/2002/07/owl#unionOf> _:genid21 .
