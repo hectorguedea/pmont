@@ -101,6 +101,9 @@
     "Member" : {
       "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Member"
     },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
     "Reputation" : {
       "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Reputation"
     },
@@ -203,6 +206,9 @@
       "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf",
       "@type" : "@id"
     },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
     "hasCity" : {
       "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCity",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
@@ -275,6 +281,9 @@
     },
     "Unstructured" : {
       "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Unstructured"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
     },
     "hasPolarity" : {
       "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPolarity",
