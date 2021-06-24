@@ -1,15 +1,43 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.hectorguedea.com/ontologies/Poltical-Marketing-Ontology.owl#"
      xml:base="http://www.hectorguedea.com/ontologies/Poltical-Marketing-Ontology.owl"
+     xmlns:ns="http://creativecommons.org/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:Political-Marketing-Ontology="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#">
     <owl:Ontology rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl">
+        <ns:license xml:lang="en">https://creativecommons.org/licenses/by-nc/4.0</ns:license>
         <rdfs:comment xml:lang="en">Political ontology for marketing purpose</rdfs:comment>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#backwardCompatibleWith"/>
+    </owl:AnnotationProperty>
     
 
 
@@ -47,7 +75,6 @@
     <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasGeographicalImpact -->
 
     <owl:ObjectProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasGeographicalImpact">
-        <owl:inverseOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isGeographicalImpactOf"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -155,7 +182,6 @@
     <!-- https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasReputation -->
 
     <owl:ObjectProperty rdf:about="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasReputation">
-        <owl:inverseOf rdf:resource="https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isReputationOf"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
