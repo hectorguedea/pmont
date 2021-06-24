@@ -444,8 +444,21 @@
     "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty"
   } ]
 }, {
+  "@id" : "http://creativecommons.org/ns#license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#backwardCompatibleWith"
+  } ]
+}, {
   "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://creativecommons.org/ns#license" : [ {
+    "@language" : "en",
+    "@value" : "https://creativecommons.org/licenses/by-nc/4.0"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Political ontology for marketing purpose"
@@ -1708,9 +1721,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#GeographicalImpact"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isGeographicalImpactOf"
   } ]
 }, {
   "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasIdeology",
@@ -1822,9 +1832,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Reputation"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isReputationOf"
   } ]
 }, {
   "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSentiment",

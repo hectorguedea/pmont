@@ -7,7 +7,21 @@
 @base <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl> .
 
 <https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl> rdf:type owl:Ontology ;
+                                                                       <http://creativecommons.org/ns#license> "https://creativecommons.org/licenses/by-nc/4.0"@en ;
                                                                        rdfs:comment "Political ontology for marketing purpose"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty ;
+                                   rdfs:subPropertyOf owl:backwardCompatibleWith .
+
 
 #################################################################
 #    Object Properties
@@ -29,7 +43,6 @@
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasGeographicalImpact
 :hasGeographicalImpact rdf:type owl:ObjectProperty ;
-                       owl:inverseOf :isGeographicalImpactOf ;
                        rdfs:domain [ rdf:type owl:Class ;
                                      owl:unionOf ( :Campaign
                                                    :Publication
@@ -101,7 +114,6 @@
 
 ###  https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasReputation
 :hasReputation rdf:type owl:ObjectProperty ;
-               owl:inverseOf :isReputationOf ;
                rdfs:domain [ rdf:type owl:Class ;
                              owl:unionOf ( :Organization
                                            :Person

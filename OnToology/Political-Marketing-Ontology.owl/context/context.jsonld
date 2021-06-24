@@ -45,6 +45,9 @@
       "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasImageUrl",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
     "MassMedia" : {
       "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#MassMedia"
     },
@@ -172,6 +175,9 @@
     "isIdeologyOf" : {
       "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isIdeologyOf",
       "@type" : "@id"
+    },
+    "backwardCompatibleWith" : {
+      "@id" : "http://www.w3.org/2002/07/owl#backwardCompatibleWith"
     },
     "SemistructuredFormat" : {
       "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SemistructuredFormat"
