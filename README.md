@@ -11,6 +11,6 @@ PMont is a Semantic Based Knowledge of Political Marketing.
 
 This repository was made with the help of the following technologies [OnToology system](http://ontoology.linkeddata.es/ "OnToology system"), [Protégé](https://protege.stanford.edu/ "Protégé"), [Widoco](https://github.com/dgarijo/Widoco "Widoco") and [OOPS! Ontology Pitfall Scanner](http://oops.linkeddata.es/ "OOPS! Ontology Pitfall Scanner"). 
 
-Ontology developed by: 
+Ontology developed by:
 Héctor Hiram Guedea Noriega,  Francisco García-Sánchez
-*Universidad de Murcia, España
+*Universidad de Murcia, España*
