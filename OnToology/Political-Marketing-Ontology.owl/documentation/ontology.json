@@ -1,0 +1,2095 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Campaign"
+    }, {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid102",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source"
+    }, {
+      "@id" : "_:genid104"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid104",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSourceFormat"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SemistructuredFormat"
+  } ]
+}, {
+  "@id" : "_:genid106",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SourceFormat"
+    }, {
+      "@id" : "_:genid108"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid108",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSourceFormatOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Semistructured"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization"
+    }, {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid116",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source"
+    }, {
+      "@id" : "_:genid118"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid118",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSourceFormat"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#StructuredFormat"
+  } ]
+}, {
+  "@id" : "_:genid120",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SourceFormat"
+    }, {
+      "@id" : "_:genid122"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid122",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSourceFormatOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Structured"
+  } ]
+}, {
+  "@id" : "_:genid124",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source"
+    }, {
+      "@id" : "_:genid126"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid126",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSourceFormat"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#UnstructuredFormat"
+  } ]
+}, {
+  "@id" : "_:genid128",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SourceFormat"
+    }, {
+      "@id" : "_:genid130"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid130",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSourceFormatOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Unstructured"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationPolarity"
+    }, {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationSentiment"
+    }, {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationTopic"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization"
+    }, {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person"
+    }, {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization"
+    }, {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person"
+    }, {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#EligibleVoter"
+    }, {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Campaign"
+    }, {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization"
+    }, {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationPolarity"
+    }, {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationSentiment"
+    }, {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationTopic"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization"
+    }, {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#EligibleVoter"
+    }, {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization"
+    }, {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person"
+    }, {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid44",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization"
+    }, {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person"
+    }, {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid48",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Campaign"
+    }, {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid51",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization"
+    }, {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person"
+    }, {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid55",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization"
+    }, {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid58",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization"
+    }, {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid61",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Campaign"
+    }, {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid64",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationTopic"
+    }, {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Reputation"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid67",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization"
+    }, {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person"
+    }, {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Campaign"
+    }, {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization"
+    }, {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid71",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Candidate"
+    }, {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid74",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"
+    }, {
+      "@id" : "_:genid76"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid76",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#MassMedia"
+  } ]
+}, {
+  "@id" : "_:genid78",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"
+    }, {
+      "@id" : "_:genid80"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid80",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid84"
+    }, {
+      "@id" : "_:genid82"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid82",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person"
+  } ]
+}, {
+  "@id" : "_:genid84",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#complementOf" : [ {
+    "@id" : "_:genid85"
+  } ]
+}, {
+  "@id" : "_:genid85",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Member"
+  } ]
+}, {
+  "@id" : "_:genid91",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid95"
+    }, {
+      "@id" : "_:genid93"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid93",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Candidate"
+  } ]
+}, {
+  "@id" : "_:genid95",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"
+    }, {
+      "@id" : "_:genid97"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid97",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Political ontology for marketing purpose"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#AMLO",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Candidate" ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasBirthday" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "1953-11-13T00:00:00"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasGeographicalImpact" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#National"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasName" : [ {
+    "@value" : "Andrés Manuel López Obrador"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSocialmediaUrl" : [ {
+    "@value" : "https://twitter.com/lopezobrador_"
+  }, {
+    "@value" : "https://www.facebook.com/lopezobrador.org.mx"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasWebUrl" : [ {
+    "@value" : "https://lopezobrador.org.mx/"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#knownAs" : [ {
+    "@value" : "AMLO"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#AMLO_Proposal1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Proposal" ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasContent" : [ {
+    "@value" : "Explorar la posibilidad de una amnistía para combatir la delincuencia."
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDatePublication" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2018-07-02T04:35:00"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasGeographicalImpact" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#National"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSource" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Webpage"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTopic" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Security"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTrustworthiness" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Authentic"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasWebUrl" : [ {
+    "@value" : "https://www.nacion321.com/elecciones/cuales-son-las-propuestas-de-amlo-para-ganar-la-presidencia-este-2018"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#AMLO"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#AMLO_Proposal2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Proposal" ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasContent" : [ {
+    "@value" : "Recorte de sueldo a funcionarios."
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDatePublication" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2018-07-02T04:35:00"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasGeographicalImpact" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#National"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSource" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Webpage"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTopic" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Gobierno"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTrustworthiness" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Authentic"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasWebUrl" : [ {
+    "@value" : "https://www.nacion321.com/elecciones/cuales-son-las-propuestas-de-amlo-para-ganar-la-presidencia-este-2018"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#AMLO"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#AMLO_Proposal3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Proposal" ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasContent" : [ {
+    "@value" : "No habrá gasolinazos"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDatePublication" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2018-07-02T04:35:00"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSource" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Webpage"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTopic" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Economy"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTrustworthiness" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Authentic"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasWebUrl" : [ {
+    "@value" : "https://www.nacion321.com/elecciones/cuales-son-las-propuestas-de-amlo-para-ganar-la-presidencia-este-2018"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#AMLO"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Angry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationSentiment" ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Authentic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Trustworthiness" ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Campaign",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "[SuperClase] Campaña, define año de la elección, con fecha de inicio y fin de campaña. La cual se relaciona con las [Clases] PoliticalParty y Candidate"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Candidate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "[SubClase] Candidato"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Member"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#CandidateCampaign",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "[Clase] Candidato para una campaña específica"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Centre_right",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Ideology" ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Corruption",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationTopic" ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Culture_and_Sport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationTopic" ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Document",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Unstructured" ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Economy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationTopic" ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Education",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationTopic" ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#ElMundo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#MassMedia" ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#ElPais",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#MassMedia" ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#ElUniversal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#MassMedia" ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#ElUniversal_NewsItem1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#NewsItem" ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasContent" : [ {
+    "@value" : "Ricardo Anaya es segundo lugar en preferencia; José Antonio Meade es tercero; en percepción de triunfo AMLO es primero, pero Anaya y Meade empatan"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDatePublication" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2018-04-09T02:00:00"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPolarity" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Positive"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSentiment" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Happy"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSource" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Webpage"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTitle" : [ {
+    "@value" : "AMLO, 10.9 puntos arriba de su competidor más cercano"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTrustworthiness" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Authentic"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasWebUrl" : [ {
+    "@value" : "https://www.eluniversal.com.mx/elecciones-2018/amlo-109-puntos-arriba-de-su-competidor-mas-cercano"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#ElUniversal"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Eleccion_Federal_Mexico_2018",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Campaign" ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCandidateCampaign" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Eleccion_Federal_Mexico_2018_relation"
+  }, {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Eleccion_Federal_Mexico_2018_relation1"
+  }, {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Eleccion_Federal_Mexico_2018_relation2"
+  }, {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Eleccion_Federal_Mexico_2018_relation3"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDateEndCampaign" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2018-06-27T00:00:00"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDateStartCampaign" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2018-03-30T00:00:00"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDescription" : [ {
+    "@value" : "Las elecciones federales de México de 2018, denominadas oficialmente por la autoridad electoral como el Proceso Electoral Federal 2017–2018,6​ se llevaron a cabo el domingo 1 de julio de 2018. Fueron organizadas por el Instituto Nacional Electoral (INE) y en ellas se renovaron los siguientes cargos de elección popular a nivel federal."
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTitle" : [ {
+    "@value" : "Elecciones federales de México de 2018"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Eleccion_Federal_Mexico_2018_relation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#CandidateCampaign" ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCandidate" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Jaime_Rodriguez_Calderon"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPoliticalParty" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Independient"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Eleccion_Federal_Mexico_2018_relation1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#CandidateCampaign" ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCandidate" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#AMLO"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPoliticalParty" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Morena"
+  }, {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PES"
+  }, {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PT"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Eleccion_Federal_Mexico_2018_relation2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#CandidateCampaign" ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCandidate" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Ricardo_Anaya_Cortes"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPoliticalParty" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#MC"
+  }, {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PAN"
+  }, {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PRD"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Eleccion_Federal_Mexico_2018_relation3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#CandidateCampaign" ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCandidate" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Jose_Antonio_Meade"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPoliticalParty" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PANAL"
+  }, {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PRI"
+  }, {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PVEM"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#EligibleVoter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "[SubClase] Votante, contiene [individuos] ciudadanos en general mayores de edad, además la [SubClase] Miembros -> Candidato, almacena [individuos] de candidatos."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Excelsior",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#MassMedia" ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Excelsior_NewsItem1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#NewsItem" ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasContent" : [ {
+    "@value" : "El senador Ernesto Cordero solicita que se tome en consideración el nuevo video en el que se vincula al aspirante presidencial de la coalición Por México al Frente con actividades ilícitas"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDatePublication" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2018-06-12T05:35:00"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPolarity" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Negative"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSentiment" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Angry"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSource" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Webpage"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTitle" : [ {
+    "@value" : "Presentan denuncia contra Ricardo Anaya por lavado de dinero"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTrustworthiness" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Authentic"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasWebUrl" : [ {
+    "@value" : "https://www.excelsior.com.mx/nacional/presentan-denuncia-contra-ricardo-anaya-por-lavado-de-dinero/1244712"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Excelsior"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Facebook",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Semistructured" ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Fake",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Trustworthiness" ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#General",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationTopic" ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#GeographicalImpact",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "[Clase] Describe el impacto de la publicación en tres [individuos] local, nacional e internacional."
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Gobierno",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationTopic" ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Happy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationSentiment" ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Health",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationTopic" ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Ideology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "[Clase] Idiología política impacta en las [Clases] Political Party, ElegibleVoter y MassMedia"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Independient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty" ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#International",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#GeographicalImpact" ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#JSON",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SemistructuredFormat" ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Jaime_Rodriguez_Calderon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Candidate" ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasBirthday" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "1957-12-28T00:00:00"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasName" : [ {
+    "@value" : "Jaime Rodríguez Calderón"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSocialmediaUrl" : [ {
+    "@value" : "https://twitter.com/JaimeRdzNL"
+  }, {
+    "@value" : "https://www.facebook.com/JaimeRodriguezElBronco/"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasWebUrl" : [ {
+    "@value" : "http://www.jaimerodriguez.mx/"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#knownAs" : [ {
+    "@value" : "Bronco"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Jaime_Rodriguez_Calderon_Proposal1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Proposal" ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasContent" : [ {
+    "@value" : "Pena de muerte a violadores y asesinos"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDatePublication" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2018-07-27T16:18:00"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasGeographicalImpact" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#National"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSource" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Webpage"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTopic" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Security"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTrustworthiness" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Authentic"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasWebUrl" : [ {
+    "@value" : "https://www.nacion321.com/elecciones/cuales-son-las-principales-propuestas-de-jaime-rodriguez-el-bronco"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Jaime_Rodriguez_Calderon"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Jaime_Rodriguez_Calderon_Proposal2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Proposal" ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasContent" : [ {
+    "@value" : "Eliminar el financiamiento público de los partidos políticos"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDatePublication" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2018-07-27T16:18:00"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasGeographicalImpact" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#National"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSource" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Webpage"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTopic" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Gobierno"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTrustworthiness" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Authentic"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasWebUrl" : [ {
+    "@value" : "https://www.nacion321.com/elecciones/cuales-son-las-principales-propuestas-de-jaime-rodriguez-el-bronco"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Jaime_Rodriguez_Calderon"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Jose_Antonio_Meade",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Candidate" ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasBirthday" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "1969-02-27T00:00:00"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSocialmediaUrl" : [ {
+    "@value" : "https://twitter.com/JoseAMeadeK"
+  }, {
+    "@value" : "https://www.facebook.com/JoseAMeadeK/"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTrustworthiness" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Authentic"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#knownAs" : [ {
+    "@value" : "Meade"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Jose_Antonio_Meade_Proposal1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Proposal" ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasContent" : [ {
+    "@value" : "Consolidar un “Sistema de Seguridad Social Integral” de acceso universal que incluya los seguros de riesgos laborales, salud, invalidez, cesantía y pensiones"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDatePublication" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2018-04-03T13:04:00"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasGeographicalImpact" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#National"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSource" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Webpage"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTopic" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Health"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTrustworthiness" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Authentic"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasWebUrl" : [ {
+    "@value" : "https://www.unotv.com/especiales/elecciones-2018/propuestas/detalle/cuales-son-las-propuestas-de-jose-antonio-meade-para-estas-elecciones-349989/"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Jose_Antonio_Meade"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Jose_Antonio_Meade_Proposal2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Proposal" ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasContent" : [ {
+    "@value" : "Instaurar el programa \"Avanzar Contigo\" que permitirá a cada mexicano elegir el apoyo que mejor le sirva."
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDatePublication" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2018-04-03T13:04:00"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasGeographicalImpact" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#National"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSource" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Webpage"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTopic" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Economy"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTrustworthiness" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Authentic"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasWebUrl" : [ {
+    "@value" : "https://www.unotv.com/especiales/elecciones-2018/propuestas/detalle/cuales-son-las-propuestas-de-jose-antonio-meade-para-estas-elecciones-349989/"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Jose_Antonio_Meade"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Left_wing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Ideology" ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Local",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#GeographicalImpact" ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#MC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty" ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasName" : [ {
+    "@value" : "Partido Movimiento Ciudadano"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#knownAs" : [ {
+    "@value" : "Movimiento Ciudadano"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#MassMedia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "[SubClase] Medios de Comunicación"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Member",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#EligibleVoter"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Milenio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#MassMedia" ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Milenio_NewsItem1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#NewsItem" ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasContent" : [ {
+    "@value" : "Pese al fracaso de la izquierda en Latinoamérica (que alcanzó su cenit con la Revolución Cubana que, lamentablemente, devino en dictadura), la avanzada populista ha tenido un ascenso considerable en las últimas décadas. El caso más visible y emblemático lo tenemos en Venezuela, con la llamada “revolución bolivariana” iniciada por el extinto Hugo Chávez y continuada por el actual presidente Nicolás Maduro, quien tiene al país en bancarrota. \nCon la engañifa de distribuir equitativamente la riqueza, acabar con los privilegios de los ricos (esto es disolver la sociedad de clases) y desmonopolizar los medios de producción (regresándoselos al pueblo), los líderes populistas consiguen construir gobiernos que, en el fondo, tienen todas las características de la temible autocracia. Es en este perfil en el que se enmarca el candidato presidencial y jefe único de Morena, Andrés Manuel López Obrador, ni más ni menos que el Rey de las Mentiras Piadosas, toda vez que se ha dedicado a prometer impunemente a la sociedad mexicana lo imposible. Limitémonos a observar dos ejemplos emblemáticos. Dijo López Obrador hace unos días que de llegar a la Presidencia homologaría los salarios entre los trabajadores de México, Estados Unidos y Canadá, insistiendo en que “ no se puede estar pagando a los trabajadores de las maquilas 800 pesos a la semana. No es posible que un trabajador en México gane 10 veces menos que lo que gana un trabajador en Estados Unidos y Canadá”. Bien, analicemos: el salario mínimo de México es de 88.40 pesos diarios. Si una empresa paga dos salarios entonces paga 176.80 pesos por día. El salario mínimo en Estados Unidos oscila entre los 12.50 dólares por hora, de manera que por ocho horas de trabajo al día nos da un total de 100 dólares diarios, esto es mil 850 pesos por día, cantidad que los mexicanos empezarían a ganar de llegar AMLO al gobierno. Suena muy bien, es cierto, pero ¿será esto posible y, sobre todo, viable? ¿Podrán las empresas pagar estos salarios sin llegar a la quiebra, lo que generaría mayor desempleo? Esta propuesta es muy atractiva, pero con un poco de juicio y sentido común nos daremos cuenta de que es una ocurrencia. Otro ejemplo. Todos estamos de acuerdo con que la distribución de la riqueza en México es lacerante: pocos que tienen mucho y muchos que tienen poco. Ante esto, López Obrador propone regalar dinero. Para empezar, promete darle a los jóvenes que ni estudian ni trabajan 3 mil 600 pesos mensuales. Si esto lo multiplicamos por la cantidad de jóvenes que no estudian ni trabajan (2.3 millones) nos da la desorbitada cifra de 8 mil 280 millones de pesos mensuales. Si a esto agregamos su promesa de apoyar en el mismo sentido a las madres solteras (4.5 millones), adultos mayores (9.5 millones) y a las personas pobres con discapacidad (7.1 millones), tendríamos un gasto mensual (sumando todas las cifras) de ¡44 mil 20 millones de pesos! Recibir dinero gratis resulta muy atractivo, pero: ¿usted cree en esta otra chuscada lopezobradorista? La generación de la riqueza tiene una lógica simple: no nace por generación espontánea, se crea, es creada por los que trabajan, generan empleos, construyen fábricas, sostienen negocios, etcétera, esto es quienes pagan impuestos al gobierno para que el gobierno lo distribuya en la sociedad a través de bienes y servicios. Es realmente seductor en términos electorales pensar que recibiremos dinero gratis, ¡todos lo quisiéramos!, pero aparte de ser inviable es una idea reduccionista que intenta obviar que el tesoro del gobierno no se construye con dinero que viene del cielo, sino con los impuestos que pagan los ciudadanos laboralmente productivos, incluidos aquellos jóvenes, madres solteras, personas de la tercera edad y discapacitados que hoy mismo trabajan y que, con la llegada de López Obrador, nada mejor les vendría que dejarlo de hacer, ¿se imagina lo que esto significaría?"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDatePublication" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2018-04-21T06:24:00"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPolarity" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Negative"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSentiment" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Angry"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSource" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Webpage"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTitle" : [ {
+    "@value" : "Los delirios populistas de AMLO"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTrustworthiness" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Authentic"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Milenio"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Morena",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty" ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasIdeology" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Left_wing"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasName" : [ {
+    "@value" : "Morena"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasWebUrl" : [ {
+    "@value" : "https://morena.si"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#knownAs" : [ {
+    "@value" : "Movimiento Regeneración Nacional"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#MySQL",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#StructuredFormat" ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#National",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#GeographicalImpact" ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Negative",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationPolarity" ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Neutral",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationPolarity" ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#NewsItem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "[SubClase] Noticia, publicación de la [SubClase] MassMedia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid74"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#NotEligibleVoter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "[SubClase] No votantes, contiene [individuos] ciudadanos en general menores de edad."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Opinion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "[SubClase] Publicación \"Opinión\", está ligado a las opiniones abiertas de los ciudadanos, ya sea ElegibleVoter o NotElegibleVoter, por lo tal a la [Clase] Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid78"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "[SuperClase] Organización, contiene las [SubClases] MassMedia y PoliticalParty"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointUnionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#MassMedia"
+    }, {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty"
+    } ]
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PAN",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty" ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasIdeology" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Centre_right"
+  }, {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Right_wing"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasName" : [ {
+    "@value" : "Partido Acción Nacional"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasWebUrl" : [ {
+    "@value" : "https://www.pan.org.mx"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#knownAs" : [ {
+    "@value" : "PAN"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PANAL",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty" ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasName" : [ {
+    "@value" : "Partido Nueva Alianza"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#knownAs" : [ {
+    "@value" : "Nueva Alianza"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PES",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty" ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasName" : [ {
+    "@value" : "Partido Encuentro Social"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasWebUrl" : [ {
+    "@value" : "https://encuentro.social/"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#knownAs" : [ {
+    "@value" : "Encuentro Social"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PRD",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty" ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasName" : [ {
+    "@value" : "Partido de la Revolución Democrática"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasWebUrl" : [ {
+    "@value" : "http://www.prd.org.mx/"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#knownAs" : [ {
+    "@value" : "PRD"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PRI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty" ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasIdeology" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Centre_right"
+  }, {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Right_wing"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasName" : [ {
+    "@value" : "Partido Revolucionario Institucional"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasWebUrl" : [ {
+    "@value" : "http://pri.org.mx/somospri"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#knownAs" : [ {
+    "@value" : "PRI"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PT",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty" ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasName" : [ {
+    "@value" : "Partido del Trabajo"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasWebUrl" : [ {
+    "@value" : "http://partidodeltrabajo.org.mx"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#knownAs" : [ {
+    "@value" : "PT"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PVEM",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty" ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasName" : [ {
+    "@value" : "Partido Verde Ecologista de México"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasWebUrl" : [ {
+    "@value" : "https://www.partidoverde.org.mx/"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#knownAs" : [ {
+    "@value" : "Partido Verde"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "[SuperClase] Persona, contiene las [SubClases] No Votante y Votante -> Miembro -> Candidato"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointUnionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#EligibleVoter"
+    }, {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#NotEligibleVoter"
+    } ]
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Place",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "[Clase] Lugares, describe las ubicaciones geográficas, ligadas a las [clases] publication, person, organization."
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "[SubClase] Partido político"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Organization"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Positive",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationPolarity" ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Proposal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "[SubClase] Publicación \"Propuesta\", está ligada a la publicaciones de las [Clases] Candidate y PoliticalParty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid91"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "[SuperClase] Publicación, contiene los diferentes tipos en [SubClases] NewsItem, Opinion, Proposal"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointUnionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#NewsItem"
+    }, {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Opinion"
+    }, {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Proposal"
+    } ]
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationPolarity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "[Clase] Polaridad, contiene los [inviduos] Positive, Neutral, Negative"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationSentiment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "[Clase] Sentimiento, describe el grado de sentimiento que tiene una publicación a través de la vinculación con [individuos] (feliz, enojado, etc)."
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationTopic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "[Clase] Tema de la publicación, describe temas o categorías en concreto de la publicación."
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#RelationalDataBase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Structured" ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Reputation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "[Clase] Reputación, el describe el grado / valor de reputación ligado a las [Clases] Person y Organization"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Ricardo_Anaya_Cortes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Candidate" ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasBirthday" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "1979-02-25T00:00:00"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSocialmediaUrl" : [ {
+    "@value" : "https://twitter.com/ricardoanayac"
+  }, {
+    "@value" : "https://www.facebook.com/RicardoAnayaC/"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasWebUrl" : [ {
+    "@value" : "https://www.ricardoanaya.com.mx/"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#knownAs" : [ {
+    "@value" : "Anaya"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Ricardo_Anaya_Cortes_Proposal1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Proposal" ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasContent" : [ {
+    "@value" : "Eliminar el fuero constitucional para el presidente de la República y para todas y todos los servidores públicos del país"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDatePublication" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2018-04-02T17:56:00"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasGeographicalImpact" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#National"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSource" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Webpage"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTopic" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Corruption"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTrustworthiness" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Authentic"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasWebUrl" : [ {
+    "@value" : "https://www.unotv.com/especiales/elecciones-2018/propuestas/detalle/cuales-son-las-propuestas-de-ricardo-anaya-para-estas-elecciones-284883/"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Ricardo_Anaya_Cortes"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Ricardo_Anaya_Cortes_Proposal2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Proposal" ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasContent" : [ {
+    "@value" : "Crear una nueva secretaria, organismo o entidad de seguridad ciudadana, separada de la Secretaría de Gobernación"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDatePublication" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2018-04-02T17:56:00"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasGeographicalImpact" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#National"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSource" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Webpage"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTopic" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Security"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTrustworthiness" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Authentic"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasWebUrl" : [ {
+    "@value" : "https://www.unotv.com/especiales/elecciones-2018/propuestas/detalle/cuales-son-las-propuestas-de-ricardo-anaya-para-estas-elecciones-284883/"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Ricardo_Anaya_Cortes"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Right_wing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Ideology" ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Sad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationSentiment" ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Security",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationTopic" ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Semistructured",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "[SubClase] Fuente Semi estructurada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid102"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SemistructuredFormat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "[SubClase] Formato Semi estructurado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SourceFormat"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid106"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "[SuperClase] Fuente, contiene tres [SubClases] con los tipos de fuentes Semi estructuradas, estructuradas y no estructuradas."
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointUnionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Semistructured"
+    }, {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Structured"
+    }, {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Unstructured"
+    } ]
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SourceFormat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "[SuperClase] Formato de fuente, contiene los tres tipos existentes con [SubClases] Semi estructurado, Estructurado y No estructurado"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointUnionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SemistructuredFormat"
+    }, {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#StructuredFormat"
+    }, {
+      "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#UnstructuredFormat"
+    } ]
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Structured",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "[SubClase] Fuente Estructurada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid116"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#StructuredFormat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "[SubClase] Formato Estructurado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SourceFormat"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid120"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Trustworthiness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "[Clase] Integridad/Fidedigno, grado o valor (falso / auténtico) asignado ligado a las [Clases] Person, Organization y Publication"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Twitter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Semistructured" ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSourceFormat" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#JSON"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Txt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#UnstructuredFormat" ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Unstructured",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "[SubClase] Fuente No estructurada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid124"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#UnstructuredFormat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "[SubClase] Formato No Estructurado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SourceFormat"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid128"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Voter1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#EligibleVoter" ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCountry" : [ {
+    "@value" : "México"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasName" : [ {
+    "@value" : "Limonita"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSocialmediaUrl" : [ {
+    "@value" : "https://twitter.com/Limoooncita"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTrustworthiness" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Authentic"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Voter1_Opinion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Opinion" ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasContent" : [ {
+    "@value" : "- Si piensas votar por AMLO, hazlo. \n- Si piensas votar por Anaya, hazlo.\n- Si piensas votar por Meade, hazlo. \n- Si piensas votar por “El Bronco”, hazlo. \n\nPERO DEJA DE ESTAR CHINGADO Y CÁLLATE ALV."
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDatePublication" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2018-07-28T00:00:00"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasGeographicalImpact" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#National"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPolarity" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Negative"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSentiment" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Angry"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSource" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Twitter"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTopic" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#General"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Voter1"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Voter2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#EligibleVoter" ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCountry" : [ {
+    "@value" : "México"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTrustworthiness" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Authentic"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Voter2_Opinion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Opinion" ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasContent" : [ {
+    "@value" : "Les invito las chelas o lo que sea pero por favor NO VOTEN POR AMLO."
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDatePublication" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2018-07-28T00:00:00"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasGeographicalImpact" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#National"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPolarity" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Negative"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSentiment" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Angry"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSource" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Twitter"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTopic" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#General"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Voter2"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Voter3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#EligibleVoter" ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCity" : [ {
+    "@value" : "CDMX"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCountry" : [ {
+    "@value" : "México"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasName" : [ {
+    "@value" : "Patty"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSocialmediaUrl" : [ {
+    "@value" : "https://twitter.com/La_Patty_Boop"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTrustworthiness" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Authentic"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Voter3_Opinion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Opinion" ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasContent" : [ {
+    "@value" : "El día que @lopezobrador_ habló en el Zócalo cuando el desafuero, lloré y lloré ese día y varios más, y cuando me acuerdo me da tristeza.\nPero ahora, cuando gane AMLO iré al Zócalo a festejar el triunfo, igual voy a llorar, pero esta vez será de felicidad. Y espero verlos ahí."
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDatePublication" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2018-05-30T00:00:00"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasGeographicalImpact" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#National"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPolarity" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Positive"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSentiment" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Happy"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSource" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Twitter"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTopic" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#General"
+  } ],
+  "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Voter3"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Webpage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Unstructured" ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Word",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#UnstructuredFormat" ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#XML",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SemistructuredFormat" ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasBirthday",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "[Data] Fecha de nacimiento, directamente para el [individuo] en la clase [person]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCandidate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#CandidateCampaign"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Candidate"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isCandidateOf"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCandidateCampaign",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Campaign"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#CandidateCampaign"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isCandidateCampaignOf"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasContent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "[Data] Contenido de la publicación"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasCountry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDateEndCampaign",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "[Data] Fecha de finalización de la campaña política"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Campaign"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDatePublication",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDateStartCampaign",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "[Data] Fecha de inicio de la campaña política"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Campaign"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid48"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasGeographicalImpact",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#GeographicalImpact"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isGeographicalImpactOf"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasIdeology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid4"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Ideology"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isIdeologyOf"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasImageUrl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid51"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid55"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPlace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid7"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Place"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPlaceOf"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPolarity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationPolarity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPublicationFeature"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPolarityOf"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPoliticalParty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#CandidateCampaign"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPoliticalPartyOf"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPriority",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPublication",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid11"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPublicationFeature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid14"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationFeature"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasReputation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid18"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Reputation"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isReputationOf"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSentiment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationSentiment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPublicationFeature"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSentimentOf"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSocialmediaUrl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid58"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSourceOf"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasSourceFormat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SourceFormat"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSourceFormatOf"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasState",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTitle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid61"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTopic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationTopic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasPublicationFeature"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isTopicOf"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasTrustworthiness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid22"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Trustworthiness"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isTrustworthinessOf"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid64"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#hasWebUrl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid67"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isCandidateCampaignOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#CandidateCampaign"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Campaign"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isCandidateOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Candidate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#CandidateCampaign"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isGeographicalImpactOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#GeographicalImpact"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isIdeologyOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Ideology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid26"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPlaceOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid29"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPolarityOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationPolarity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationFeature"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPoliticalPartyOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PoliticalParty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#CandidateCampaign"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationFeature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid33"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid37"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isReputationOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Reputation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Person"
+  }, {
+    "@id" : "_:genid40"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSentimentOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationSentiment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationFeature"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSourceFormatOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#SourceFormat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isSourceOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Source"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isTopicOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#PublicationTopic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Publication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isPublicationFeature"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#isTrustworthinessOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#Trustworthiness"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid44"
+  } ]
+}, {
+  "@id" : "https://hectorguedea.com/ontologia/Political-Marketing-Ontology.owl#knownAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid71"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+} ]
